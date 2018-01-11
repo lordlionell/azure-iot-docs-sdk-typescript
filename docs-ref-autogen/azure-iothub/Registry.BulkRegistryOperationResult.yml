@@ -21,7 +21,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'DeviceRegistryOperationError[] errors'
+      content: 'errors: DeviceRegistryOperationError[]'
       return:
         type:
           - '@azure-iothub.Registry.DeviceRegistryOperationError[]'
@@ -35,7 +35,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: boolean isSuccessful
+      content: 'isSuccessful: boolean'
       return:
         type:
           - boolean

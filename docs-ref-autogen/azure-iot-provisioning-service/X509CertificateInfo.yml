@@ -35,7 +35,7 @@ items:
       The name of certificate used to sign the certificate that is the basis
       for this info.
     syntax:
-      content: string issuerName
+      content: 'issuerName: string'
       return:
         type:
           - string
@@ -53,7 +53,7 @@ items:
 
       purposes.
     syntax:
-      content: Date notAfterUtc
+      content: 'notAfterUtc: Date'
       return:
         type:
           - Date
@@ -71,7 +71,7 @@ items:
 
       purposes.
     syntax:
-      content: Date notBeforeUtc
+      content: 'notBeforeUtc: Date'
       return:
         type:
           - Date
@@ -89,7 +89,7 @@ items:
 
       this serial number is not unique over all certificates world wide.
     syntax:
-      content: string serialNumber
+      content: 'serialNumber: string'
       return:
         type:
           - string
@@ -103,7 +103,7 @@ items:
     type: property
     summary: A 160 bit hash of the certificate.
     syntax:
-      content: string sha1Thumbprint
+      content: 'sha1Thumbprint: string'
       return:
         type:
           - string
@@ -117,7 +117,7 @@ items:
     type: property
     summary: A 256 bit hash of the certificate.
     syntax:
-      content: string sha256Thumbprint
+      content: 'sha256Thumbprint: string'
       return:
         type:
           - string
@@ -133,7 +133,7 @@ items:
       For clientCertificates the subjectName is used as the deviceId on the IoT
       Hub.
     syntax:
-      content: string subjectName
+      content: 'subjectName: string'
       return:
         type:
           - string
@@ -151,7 +151,7 @@ items:
 
       Version 3 is currently the highest version number.
     syntax:
-      content: number version
+      content: 'version: number'
       return:
         type:
           - number

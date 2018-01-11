@@ -24,7 +24,7 @@ items:
     type: property
     summary: ID of the current operation
     syntax:
-      content: string operationId
+      content: 'operationId: string'
       return:
         type:
           - string
@@ -39,7 +39,7 @@ items:
     summary: details on the completed registration operation
     optional: true
     syntax:
-      content: DeviceRegistrationState registrationState
+      content: 'registrationState?: DeviceRegistrationState'
       return:
         type:
           - '@azure-iot-provisioning-device.DeviceRegistrationState'
@@ -53,7 +53,7 @@ items:
     type: property
     summary: registration status
     syntax:
-      content: RegistrationStatus status
+      content: 'status: RegistrationStatus'
       return:
         type:
           - RegistrationStatus

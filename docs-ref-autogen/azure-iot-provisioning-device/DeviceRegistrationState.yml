@@ -22,7 +22,7 @@ items:
     type: property
     summary: IoT Hub where the provisioned device is located
     syntax:
-      content: string assignedHub
+      content: 'assignedHub: string'
       return:
         type:
           - string
@@ -36,7 +36,7 @@ items:
     type: property
     summary: deviceId for the provisioned device
     syntax:
-      content: string deviceId
+      content: 'deviceId: string'
       return:
         type:
           - string
@@ -50,7 +50,7 @@ items:
     type: property
     summary: registration status
     syntax:
-      content: RegistrationStatus status
+      content: 'status: RegistrationStatus'
       return:
         type:
           - RegistrationStatus

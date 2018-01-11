@@ -22,7 +22,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: number count
+      content: 'count: number'
       return:
         type:
           - number
@@ -36,7 +36,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: Metadata metadata
+      content: 'metadata: Metadata'
       return:
         type:
           - '@azure-iot-provisioning-service.Metadata'
@@ -50,7 +50,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: number version
+      content: 'version: number'
       return:
         type:
           - number

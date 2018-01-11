@@ -27,7 +27,7 @@ items:
     type: property
     summary: 'Initial retry interval: 100 ms by default.'
     syntax:
-      content: number c
+      content: 'c: number'
       return:
         type:
           - number
@@ -41,7 +41,7 @@ items:
     type: property
     summary: Maximum interval between each retry. 10 seconds by default
     syntax:
-      content: number cMax
+      content: 'cMax: number'
       return:
         type:
           - number
@@ -55,7 +55,7 @@ items:
     type: property
     summary: Minimal interval between each retry. 100 milliseconds by default
     syntax:
-      content: number cMin
+      content: 'cMin: number'
       return:
         type:
           - number
@@ -69,7 +69,7 @@ items:
     type: property
     summary: Jitter down factor. 0.5 by default
     syntax:
-      content: number jd
+      content: 'jd: number'
       return:
         type:
           - number
@@ -83,7 +83,7 @@ items:
     type: property
     summary: Jitter up factor. 0.25 by default.
     syntax:
-      content: number ju
+      content: 'ju: number'
       return:
         type:
           - number

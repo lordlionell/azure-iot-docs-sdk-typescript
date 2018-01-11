@@ -23,7 +23,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: _SymmetricKey SymmetricKey
+      content: 'SymmetricKey?: _SymmetricKey'
       return:
         type:
           - _SymmetricKey
@@ -38,7 +38,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: _SymmetricKey symmetricKey
+      content: 'symmetricKey?: _SymmetricKey'
       return:
         type:
           - _SymmetricKey
@@ -53,7 +53,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: X509Thumbprints x509Thumbprint
+      content: 'x509Thumbprint?: X509Thumbprints'
       return:
         type:
           - '@azure-iothub.Device.X509Thumbprints'

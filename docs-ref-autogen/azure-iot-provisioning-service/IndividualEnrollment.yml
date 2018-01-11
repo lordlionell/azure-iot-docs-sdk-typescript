@@ -30,7 +30,7 @@ items:
     type: property
     summary: The security mechanism associated with this object.
     syntax:
-      content: AttestationMechanism attestation
+      content: 'attestation: AttestationMechanism'
       return:
         type:
           - '@azure-iot-provisioning-service.AttestationMechanism'
@@ -44,7 +44,7 @@ items:
     type: property
     summary: The date and time that this object was created.
     syntax:
-      content: string createdDateTimeUtc
+      content: 'createdDateTimeUtc: string'
       return:
         type:
           - string
@@ -61,7 +61,7 @@ items:
       If this object is using x509 attestation, this property should be
       undefined.
     syntax:
-      content: string deviceId
+      content: 'deviceId: string'
       return:
         type:
           - string
@@ -77,7 +77,7 @@ items:
       An opaque value suitable to uniquely identify a particular generation
       of this object for use during a CRUD operation.
     syntax:
-      content: string etag
+      content: 'etag: string'
       return:
         type:
           - string
@@ -93,7 +93,7 @@ items:
       The initial twin document that will be created for this device upon its
       provisioning.
     syntax:
-      content: InitialTwin initialTwin
+      content: 'initialTwin: InitialTwin'
       return:
         type:
           - '@azure-iot-provisioning-service.InitialTwin'
@@ -111,7 +111,7 @@ items:
 
       associated with this object.
     syntax:
-      content: string iotHubHostName
+      content: 'iotHubHostName: string'
       return:
         type:
           - string
@@ -127,7 +127,7 @@ items:
       The date and time that this enrollment record was last updated.  This
       could include an update or an actual registration.
     syntax:
-      content: string lastUpdatedDateTimeUtc
+      content: 'lastUpdatedDateTimeUtc: string'
       return:
         type:
           - string
@@ -143,7 +143,7 @@ items:
       Indicates whether this enrollment can be used as the basis for a device
       provisioning.
     syntax:
-      content: ProvisioningStatus provisioningStatus
+      content: 'provisioningStatus: ProvisioningStatus'
       return:
         type:
           - ProvisioningStatus
@@ -159,7 +159,7 @@ items:
       A unique identifier for this object.
       The value is all lowercase alphanumeric with embedded `-` permitted.
     syntax:
-      content: string registrationId
+      content: 'registrationId: string'
       return:
         type:
           - string
@@ -173,7 +173,7 @@ items:
     type: property
     summary: The state of the device registration associated with this object.
     syntax:
-      content: DeviceRegistrationState registrationState
+      content: 'registrationState: DeviceRegistrationState'
       return:
         type:
           - '@azure-iot-provisioning-service.DeviceRegistrationState'

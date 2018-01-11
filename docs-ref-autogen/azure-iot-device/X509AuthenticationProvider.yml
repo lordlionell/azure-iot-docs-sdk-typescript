@@ -35,7 +35,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: AuthenticationType type
+      content: 'type: AuthenticationType'
       return:
         type:
           - AuthenticationType
