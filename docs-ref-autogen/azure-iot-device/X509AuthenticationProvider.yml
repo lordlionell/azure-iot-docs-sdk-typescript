@@ -25,7 +25,6 @@ items:
       since there are no token involved in X509 authentication. The transports
       will get the credentials using the `getDeviceCredentials` method.
     package: azure-iot-device
-    module: Global
   - uid: azure-iot-device.X509AuthenticationProvider.type
     name: type
     fullName: type
@@ -39,7 +38,6 @@ items:
       return:
         type:
           - AuthenticationType
-    module: Global
   - uid: azure-iot-device.X509AuthenticationProvider.getDeviceCredentials
     name: getDeviceCredentials
     children: []
@@ -60,7 +58,6 @@ items:
           description: >
             function that will be called with either an error or a set of device
             credentials that can be used to authenticate with the IoT hub.
-    module: Global
   - uid: azure-iot-device.X509AuthenticationProvider.setX509Options
     name: setX509Options
     children: []
@@ -78,7 +75,6 @@ items:
             - X509
           description: |
             The `X509` object containing the certificate and key.
-    module: Global
   - uid: azure-iot-device.X509AuthenticationProvider.fromX509Options
     name: fromX509Options
     children: []
@@ -112,4 +108,3 @@ items:
       return:
         type:
           - '@azure-iot-device.X509AuthenticationProvider'
-    module: Global

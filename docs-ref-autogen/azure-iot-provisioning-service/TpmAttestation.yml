@@ -11,7 +11,6 @@ items:
     type: interface
     summary: Attestation via TPM.
     package: azure-iot-provisioning-service
-    module: Global
   - uid: azure-iot-provisioning-service.TpmAttestation.endorsementKey
     name: endorsementKey
     fullName: endorsementKey
@@ -35,7 +34,6 @@ items:
       return:
         type:
           - string
-    module: Global
   - uid: azure-iot-provisioning-service.TpmAttestation.storageRootKey
     name: storageRootKey
     fullName: storageRootKey
@@ -67,4 +65,3 @@ items:
       return:
         type:
           - string
-    module: Global

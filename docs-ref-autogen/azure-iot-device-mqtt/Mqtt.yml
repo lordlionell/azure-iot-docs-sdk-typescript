@@ -17,4 +17,3 @@ items:
     extends:
       name: EventEmitter
     package: azure-iot-device-mqtt
-    module: Global

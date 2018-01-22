@@ -12,7 +12,6 @@ items:
     type: interface
     summary: Information passed between client and transport during Tpm registration
     package: azure-iot-provisioning-device
-    module: Global
   - uid: azure-iot-provisioning-device.TpmRegistrationInfo.endorsementKey
     name: endorsementKey
     fullName: endorsementKey
@@ -26,7 +25,6 @@ items:
       return:
         type:
           - string
-    module: Global
   - uid: azure-iot-provisioning-device.TpmRegistrationInfo.request
     name: request
     fullName: request
@@ -40,7 +38,6 @@ items:
       return:
         type:
           - '@azure-iot-provisioning-device.RegistrationRequest'
-    module: Global
   - uid: azure-iot-provisioning-device.TpmRegistrationInfo.storageRootKey
     name: storageRootKey
     fullName: storageRootKey
@@ -54,4 +51,3 @@ items:
       return:
         type:
           - string
-    module: Global

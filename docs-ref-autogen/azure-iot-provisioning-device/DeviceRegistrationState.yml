@@ -12,7 +12,6 @@ items:
     type: interface
     summary: structure returned from the provisioning service
     package: azure-iot-provisioning-device
-    module: Global
   - uid: azure-iot-provisioning-device.DeviceRegistrationState.assignedHub
     name: assignedHub
     fullName: assignedHub
@@ -26,7 +25,6 @@ items:
       return:
         type:
           - string
-    module: Global
   - uid: azure-iot-provisioning-device.DeviceRegistrationState.deviceId
     name: deviceId
     fullName: deviceId
@@ -40,7 +38,6 @@ items:
       return:
         type:
           - string
-    module: Global
   - uid: azure-iot-provisioning-device.DeviceRegistrationState.status
     name: status
     fullName: status
@@ -54,4 +51,3 @@ items:
       return:
         type:
           - RegistrationStatus
-    module: Global

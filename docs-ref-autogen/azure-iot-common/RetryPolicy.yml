@@ -22,7 +22,6 @@ items:
 
       Those 2 components hide behind 2 method calls described in this interface.
     package: azure-iot-common
-    module: Global
   - uid: azure-iot-common.RetryPolicy.nextRetryTimeout
     name: nextRetryTimeout
     fullName: nextRetryTimeout
@@ -36,7 +35,6 @@ items:
       return:
         type:
           - '(retryCount: number, isThrottled: boolean) => number'
-    module: Global
   - uid: azure-iot-common.RetryPolicy.shouldRetry
     name: shouldRetry
     fullName: shouldRetry
@@ -52,4 +50,3 @@ items:
       return:
         type:
           - '(error: Error) => boolean'
-    module: Global

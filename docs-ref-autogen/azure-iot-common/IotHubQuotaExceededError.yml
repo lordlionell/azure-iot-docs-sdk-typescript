@@ -18,7 +18,6 @@ items:
     extends:
       name: Error
     package: azure-iot-common
-    module: Global
   - uid: azure-iot-common.IotHubQuotaExceededError.constructor
     name: IotHubQuotaExceededError
     children: []
@@ -34,7 +33,6 @@ items:
             - string
           description: ''
           optional: true
-    module: Global
   - uid: azure-iot-common.IotHubQuotaExceededError.Error
     name: Error
     fullName: Error
@@ -48,4 +46,3 @@ items:
       return:
         type:
           - ErrorConstructor
-    module: Global

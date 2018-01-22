@@ -28,7 +28,6 @@ items:
     extends:
       name: EventEmitter
     package: azure-iot-device
-    module: Global
   - uid: azure-iot-device.SharedAccessKeyAuthenticationProvider.type
     name: type
     fullName: type
@@ -42,7 +41,6 @@ items:
       return:
         type:
           - AuthenticationType
-    module: Global
   - uid: >-
       azure-iot-device.SharedAccessKeyAuthenticationProvider.getDeviceCredentials
     name: getDeviceCredentials
@@ -64,7 +62,6 @@ items:
           description: >
             function that will be called with either an error or a set of device
             credentials that can be used to authenticate with the IoT hub.
-    module: Global
   - uid: >-
       azure-iot-device.SharedAccessKeyAuthenticationProvider.fromConnectionString
     name: fromConnectionString
@@ -102,4 +99,3 @@ items:
       return:
         type:
           - '@azure-iot-device.SharedAccessKeyAuthenticationProvider'
-    module: Global

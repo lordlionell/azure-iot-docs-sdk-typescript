@@ -9,4 +9,3 @@ items:
     type: class
     summary: Result returned when a transport is successfully connected.
     package: azure-iot-common
-    module: Global

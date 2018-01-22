@@ -19,4 +19,3 @@ items:
     extends:
       name: '@azure-iothub.Amqp'
     package: azure-iothub
-    module: Global

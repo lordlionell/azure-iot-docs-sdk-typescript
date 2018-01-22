@@ -17,7 +17,6 @@ items:
       Configuration structure used by transports and `AuthenticationProvider`
       objects to store and exchange credentials.
     package: azure-iot-common
-    module: Global
   - uid: azure-iot-common.TransportConfig.deviceId
     name: deviceId
     fullName: deviceId
@@ -31,7 +30,6 @@ items:
       return:
         type:
           - string
-    module: Global
   - uid: azure-iot-common.TransportConfig.host
     name: host
     fullName: host
@@ -45,7 +43,6 @@ items:
       return:
         type:
           - string
-    module: Global
   - uid: azure-iot-common.TransportConfig.sharedAccessKey
     name: sharedAccessKey
     fullName: sharedAccessKey
@@ -60,7 +57,6 @@ items:
       return:
         type:
           - string
-    module: Global
   - uid: azure-iot-common.TransportConfig.sharedAccessKeyName
     name: sharedAccessKeyName
     fullName: sharedAccessKeyName
@@ -77,7 +73,6 @@ items:
       return:
         type:
           - string
-    module: Global
   - uid: azure-iot-common.TransportConfig.sharedAccessSignature
     name: sharedAccessSignature
     fullName: sharedAccessSignature
@@ -94,7 +89,6 @@ items:
       return:
         type:
           - string
-    module: Global
   - uid: azure-iot-common.TransportConfig.x509
     name: x509
     fullName: x509
@@ -111,4 +105,3 @@ items:
       return:
         type:
           - '@azure-iot-common.X509'
-    module: Global

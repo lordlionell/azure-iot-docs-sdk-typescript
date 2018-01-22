@@ -157,9 +157,6 @@
     - uid: azure-iot-common.SharedAccessSignature
       name: SharedAccessSignature
       items: []
-    - uid: azure-iot-common.Global
-      name: Global
-      items: []
 - uid: azure-iot-device-http
   name: azure-iot-device-http
   items:
@@ -207,9 +204,6 @@
       items: []
     - uid: azure-iot-device.X509AuthenticationProvider
       name: X509AuthenticationProvider
-      items: []
-    - uid: azure-iot-device.Global
-      name: Global
       items: []
 - uid: azure-iot-mqtt-base
   name: azure-iot-mqtt-base
@@ -402,7 +396,4 @@
       items: []
     - uid: azure-iothub.Twin
       name: Twin
-      items: []
-    - uid: azure-iothub.Global
-      name: Global
       items: []

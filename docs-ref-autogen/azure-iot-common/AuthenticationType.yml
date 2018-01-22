@@ -11,7 +11,6 @@ items:
     type: enum
     summary: Designate the type of authentication used by an `AuthenticationProvider`.
     package: azure-iot-common
-    module: Global
   - uid: azure-iot-common.AuthenticationType.Token
     name: Token
     children: []
@@ -22,7 +21,6 @@ items:
       generated and signed with a secret key.
     type: field
     numericValue: 1
-    module: Global
   - uid: azure-iot-common.AuthenticationType.X509
     name: X509
     children: []
@@ -31,4 +29,3 @@ items:
     summary: X509 Certificate based authentication.
     type: field
     numericValue: 0
-    module: Global

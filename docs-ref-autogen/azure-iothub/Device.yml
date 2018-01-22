@@ -36,7 +36,6 @@ items:
       but this will be removed in a future major version update and customers
       should instead use plain JSON objects.
     package: azure-iothub
-    module: Global
     deprecated:
       content: ''
   - uid: azure-iothub.Device.constructor
@@ -57,7 +56,6 @@ items:
             to properties in the object. If no argument is provided, Device
             roperties will be assigned default values.
           optional: true
-    module: Global
   - uid: azure-iothub.Device.authentication
     name: authentication
     fullName: authentication
@@ -72,7 +70,6 @@ items:
       return:
         type:
           - '@azure-iothub.Device.Authentication'
-    module: Global
   - uid: azure-iothub.Device.cloudToDeviceMessageCount
     name: cloudToDeviceMessageCount
     fullName: cloudToDeviceMessageCount
@@ -87,7 +84,6 @@ items:
       return:
         type:
           - string
-    module: Global
   - uid: azure-iothub.Device.connectionState
     name: connectionState
     fullName: connectionState
@@ -113,7 +109,6 @@ items:
       return:
         type:
           - ConnectionState
-    module: Global
   - uid: azure-iothub.Device.connectionStateUpdatedTime
     name: connectionStateUpdatedTime
     fullName: connectionStateUpdatedTime
@@ -128,7 +123,6 @@ items:
       return:
         type:
           - string
-    module: Global
   - uid: azure-iothub.Device.deviceId
     name: deviceId
     fullName: deviceId
@@ -144,7 +138,6 @@ items:
       return:
         type:
           - string
-    module: Global
   - uid: azure-iothub.Device.etag
     name: etag
     fullName: etag
@@ -159,7 +152,6 @@ items:
       return:
         type:
           - string
-    module: Global
   - uid: azure-iothub.Device.generationId
     name: generationId
     fullName: generationId
@@ -176,7 +168,6 @@ items:
       return:
         type:
           - string
-    module: Global
   - uid: azure-iothub.Device.lastActivityTime
     name: lastActivityTime
     fullName: lastActivityTime
@@ -193,7 +184,6 @@ items:
       return:
         type:
           - string
-    module: Global
   - uid: azure-iothub.Device.status
     name: status
     fullName: status
@@ -210,7 +200,6 @@ items:
       return:
         type:
           - DeviceStatus
-    module: Global
   - uid: azure-iothub.Device.statusReason
     name: statusReason
     fullName: statusReason
@@ -225,7 +214,6 @@ items:
       return:
         type:
           - string
-    module: Global
   - uid: azure-iothub.Device.statusUpdatedTime
     name: statusUpdatedTime
     fullName: statusUpdatedTime
@@ -240,4 +228,3 @@ items:
       return:
         type:
           - string
-    module: Global

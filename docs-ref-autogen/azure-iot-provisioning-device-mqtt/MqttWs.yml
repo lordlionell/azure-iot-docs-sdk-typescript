@@ -11,4 +11,3 @@ items:
     extends:
       name: '@azure-iot-provisioning-device-mqtt.Mqtt'
     package: azure-iot-provisioning-device-mqtt
-    module: Global

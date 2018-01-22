@@ -11,7 +11,6 @@ items:
     type: interface
     summary: ''
     package: azure-iothub
-    module: Global
   - uid: azure-iothub.Registry.BulkRegistryOperationResult.errors
     name: errors
     fullName: errors
@@ -25,7 +24,6 @@ items:
       return:
         type:
           - '@azure-iothub.Registry.DeviceRegistryOperationError[]'
-    module: Global
   - uid: azure-iothub.Registry.BulkRegistryOperationResult.isSuccessful
     name: isSuccessful
     fullName: isSuccessful
@@ -39,4 +37,3 @@ items:
       return:
         type:
           - boolean
-    module: Global

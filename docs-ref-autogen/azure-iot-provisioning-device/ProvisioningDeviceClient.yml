@@ -12,7 +12,6 @@ items:
       Client object used to communicate with the Azure IoT Hub Device
       Provisioning Service.
     package: azure-iot-provisioning-device
-    module: Global
   - uid: azure-iot-provisioning-device.ProvisioningDeviceClient.create
     name: create
     children: []
@@ -45,4 +44,3 @@ items:
       return:
         type:
           - '@azure-iot-provisioning-device.RegistrationClient'
-    module: Global

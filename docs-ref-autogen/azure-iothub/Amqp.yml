@@ -19,4 +19,3 @@ items:
     extends:
       name: EventEmitter
     package: azure-iothub
-    module: Global

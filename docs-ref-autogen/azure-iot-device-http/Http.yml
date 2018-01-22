@@ -18,4 +18,3 @@ items:
     extends:
       name: EventEmitter
     package: azure-iot-device-http
-    module: Global

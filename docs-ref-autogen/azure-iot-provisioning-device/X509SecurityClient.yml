@@ -14,7 +14,6 @@ items:
       Public API exposed by the X509 security client object.  This is only
       useful if you're writing your own security client.
     package: azure-iot-provisioning-device
-    module: Global
   - uid: azure-iot-provisioning-device.X509SecurityClient.getCertificate
     name: getCertificate
     children: []
@@ -30,7 +29,6 @@ items:
             - '(err?: Error, cert?: X509) => void'
           description: |
             called when the operation is complete
-    module: Global
   - uid: azure-iot-provisioning-device.X509SecurityClient.getCertificateChain
     name: getCertificateChain
     children: []
@@ -48,7 +46,6 @@ items:
             - '(err?: Error, cert?: string) => void'
           description: |
             called when the operation is copmlete
-    module: Global
   - uid: azure-iot-provisioning-device.X509SecurityClient.getRegistrationId
     name: getRegistrationId
     children: []
@@ -62,4 +59,3 @@ items:
       return:
         type:
           - string
-    module: Global

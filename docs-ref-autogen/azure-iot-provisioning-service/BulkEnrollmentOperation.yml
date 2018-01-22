@@ -11,7 +11,6 @@ items:
     type: interface
     summary: Bulk operation
     package: azure-iot-provisioning-service
-    module: Global
   - uid: azure-iot-provisioning-service.BulkEnrollmentOperation.enrollments
     name: enrollments
     fullName: enrollments
@@ -29,7 +28,6 @@ items:
       return:
         type:
           - Array<@azure-iot-provisioning-service.IndividualEnrollment>
-    module: Global
   - uid: azure-iot-provisioning-service.BulkEnrollmentOperation.mode
     name: mode
     fullName: mode
@@ -45,4 +43,3 @@ items:
       return:
         type:
           - BulkOperationMode
-    module: Global

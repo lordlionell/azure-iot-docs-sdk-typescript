@@ -33,7 +33,6 @@ items:
     extends:
       name: EventEmitter
     package: azure-iot-device
-    module: Global
   - uid: azure-iot-device.Client.Transport.abandon
     name: abandon
     children: []
@@ -54,7 +53,6 @@ items:
           type:
             - '(err?: Error, results?: MessageAbandoned) => void'
           description: ''
-    module: Global
   - uid: azure-iot-device.Client.Transport.complete
     name: complete
     children: []
@@ -75,7 +73,6 @@ items:
           type:
             - '(err?: Error, result?: MessageCompleted) => void'
           description: ''
-    module: Global
   - uid: azure-iot-device.Client.Transport.connect
     name: connect
     children: []
@@ -90,7 +87,6 @@ items:
           type:
             - '(err?: Error, result?: Connected) => void'
           description: ''
-    module: Global
   - uid: azure-iot-device.Client.Transport.disableC2D
     name: disableC2D
     children: []
@@ -105,7 +101,6 @@ items:
           type:
             - '(err?: Error) => void'
           description: ''
-    module: Global
   - uid: azure-iot-device.Client.Transport.disableMethods
     name: disableMethods
     children: []
@@ -120,7 +115,6 @@ items:
           type:
             - '(err?: Error) => void'
           description: ''
-    module: Global
   - uid: azure-iot-device.Client.Transport.disableTwin
     name: disableTwin
     children: []
@@ -135,7 +129,6 @@ items:
           type:
             - '(err?: Error) => void'
           description: ''
-    module: Global
   - uid: azure-iot-device.Client.Transport.disconnect
     name: disconnect
     children: []
@@ -150,7 +143,6 @@ items:
           type:
             - '(err?: Error, result?: Disconnected) => void'
           description: ''
-    module: Global
   - uid: azure-iot-device.Client.Transport.enableC2D
     name: enableC2D
     children: []
@@ -165,7 +157,6 @@ items:
           type:
             - '(err?: Error) => void'
           description: ''
-    module: Global
   - uid: azure-iot-device.Client.Transport.enableMethods
     name: enableMethods
     children: []
@@ -180,7 +171,6 @@ items:
           type:
             - '(err?: Error) => void'
           description: ''
-    module: Global
   - uid: azure-iot-device.Client.Transport.enableTwin
     name: enableTwin
     children: []
@@ -195,7 +185,6 @@ items:
           type:
             - '(err?: Error) => void'
           description: ''
-    module: Global
   - uid: azure-iot-device.Client.Transport.getTwinReceiver
     name: getTwinReceiver
     children: []
@@ -210,7 +199,6 @@ items:
           type:
             - '(err?: Error, receiver?: any) => void'
           description: ''
-    module: Global
   - uid: azure-iot-device.Client.Transport.on
     name: 'on'
     children: []
@@ -232,7 +220,6 @@ items:
       return:
         type:
           - this
-    module: Global
   - uid: azure-iot-device.Client.Transport.on_1
     name: 'on'
     children: []
@@ -254,7 +241,6 @@ items:
       return:
         type:
           - this
-    module: Global
   - uid: azure-iot-device.Client.Transport.on_2
     name: 'on'
     children: []
@@ -276,7 +262,6 @@ items:
       return:
         type:
           - this
-    module: Global
   - uid: azure-iot-device.Client.Transport.onDeviceMethod
     name: onDeviceMethod
     children: []
@@ -297,7 +282,6 @@ items:
           type:
             - '(request: MethodMessage, response: DeviceMethodResponse) => void'
           description: ''
-    module: Global
   - uid: azure-iot-device.Client.Transport.reject
     name: reject
     children: []
@@ -318,7 +302,6 @@ items:
           type:
             - '(err?: Error, results?: MessageRejected) => void'
           description: ''
-    module: Global
   - uid: azure-iot-device.Client.Transport.sendEvent
     name: sendEvent
     children: []
@@ -339,7 +322,6 @@ items:
           type:
             - '(err?: Error, result?: MessageEnqueued) => void'
           description: ''
-    module: Global
   - uid: azure-iot-device.Client.Transport.sendEventBatch
     name: sendEventBatch
     children: []
@@ -360,7 +342,6 @@ items:
           type:
             - '(err?: Error, result?: MessageEnqueued) => void'
           description: ''
-    module: Global
   - uid: azure-iot-device.Client.Transport.sendMethodResponse
     name: sendMethodResponse
     children: []
@@ -382,7 +363,6 @@ items:
             - '(err?: Error, result?: any) => void'
           description: ''
           optional: true
-    module: Global
   - uid: azure-iot-device.Client.Transport.sendTwinRequest
     name: sendTwinRequest
     children: []
@@ -417,7 +397,6 @@ items:
             - '(err?: Error, result?: any) => void'
           description: ''
           optional: true
-    module: Global
   - uid: azure-iot-device.Client.Transport.setOptions
     name: setOptions
     children: []
@@ -438,7 +417,6 @@ items:
           type:
             - '(err?: Error, result?: TransportConfigured) => void'
           description: ''
-    module: Global
   - uid: azure-iot-device.Client.Transport.updateSharedAccessSignature
     name: updateSharedAccessSignature
     children: []
@@ -459,4 +437,3 @@ items:
           type:
             - '(err?: Error, result?: SharedAccessSignatureUpdated) => void'
           description: ''
-    module: Global

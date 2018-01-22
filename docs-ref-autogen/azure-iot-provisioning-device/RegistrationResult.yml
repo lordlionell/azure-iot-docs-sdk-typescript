@@ -11,4 +11,3 @@ items:
     extends:
       name: '@azure-iot-provisioning-device.DeviceRegistrationState'
     package: azure-iot-provisioning-device
-    module: Global

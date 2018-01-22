@@ -18,7 +18,6 @@ items:
     extends:
       name: EventEmitter
     package: azure-iot-mqtt-base
-    module: Global
   - uid: azure-iot-mqtt-base.MqttBase.constructor
     name: MqttBase
     children: []
@@ -38,7 +37,6 @@ items:
             - any
           description: ''
           optional: true
-    module: Global
   - uid: azure-iot-mqtt-base.MqttBase.connect
     name: connect
     children: []
@@ -59,7 +57,6 @@ items:
           type:
             - '(err?: Error, result?: any) => void'
           description: ''
-    module: Global
   - uid: azure-iot-mqtt-base.MqttBase.disconnect
     name: disconnect
     children: []
@@ -74,7 +71,6 @@ items:
           type:
             - '(err?: Error, result?: any) => void'
           description: ''
-    module: Global
   - uid: azure-iot-mqtt-base.MqttBase.publish
     name: publish
     children: []
@@ -103,7 +99,6 @@ items:
           type:
             - '(err?: Error, result?: any) => void'
           description: ''
-    module: Global
   - uid: azure-iot-mqtt-base.MqttBase.subscribe
     name: subscribe
     children: []
@@ -128,7 +123,6 @@ items:
           type:
             - '(err?: Error, result?: any) => void'
           description: ''
-    module: Global
   - uid: azure-iot-mqtt-base.MqttBase.unsubscribe
     name: unsubscribe
     children: []
@@ -149,7 +143,6 @@ items:
           type:
             - '(err?: Error, result?: any) => void'
           description: ''
-    module: Global
   - uid: azure-iot-mqtt-base.MqttBase.updateSharedAccessSignature
     name: updateSharedAccessSignature
     children: []
@@ -170,4 +163,3 @@ items:
           type:
             - '(err?: Error) => void'
           description: ''
-    module: Global

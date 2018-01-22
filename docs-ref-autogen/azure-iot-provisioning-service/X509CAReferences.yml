@@ -11,7 +11,6 @@ items:
     type: interface
     summary: ''
     package: azure-iot-provisioning-service
-    module: Global
   - uid: azure-iot-provisioning-service.X509CAReferences.primary
     name: primary
     fullName: primary
@@ -25,7 +24,6 @@ items:
       return:
         type:
           - string
-    module: Global
   - uid: azure-iot-provisioning-service.X509CAReferences.secondary
     name: secondary
     fullName: secondary
@@ -39,4 +37,3 @@ items:
       return:
         type:
           - string
-    module: Global

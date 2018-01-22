@@ -11,7 +11,6 @@ items:
     type: interface
     summary: ''
     package: azure-iothub
-    module: Global
   - uid: azure-iothub.Device.X509Thumbprints.primaryThumbprint
     name: primaryThumbprint
     fullName: primaryThumbprint
@@ -26,7 +25,6 @@ items:
       return:
         type:
           - string
-    module: Global
   - uid: azure-iothub.Device.X509Thumbprints.secondaryThumbprint
     name: secondaryThumbprint
     fullName: secondaryThumbprint
@@ -41,4 +39,3 @@ items:
       return:
         type:
           - string
-    module: Global

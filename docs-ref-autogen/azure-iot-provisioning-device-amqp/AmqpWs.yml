@@ -11,4 +11,3 @@ items:
     extends:
       name: '@azure-iot-provisioning-device-amqp.Amqp'
     package: azure-iot-provisioning-device-amqp
-    module: Global

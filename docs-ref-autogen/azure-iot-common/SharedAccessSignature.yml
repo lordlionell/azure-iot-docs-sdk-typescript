@@ -16,7 +16,6 @@ items:
       when using symmetric keys (as opposed to x509 certificates) to secure the
       connection with the Azure IoT hub.
     package: azure-iot-common
-    module: Global
   - uid: azure-iot-common.SharedAccessSignature.extend
     name: extend
     children: []
@@ -40,7 +39,6 @@ items:
       - type: ReferenceError
         description: |
           Will be thrown if the argument is falsy.
-    module: Global
   - uid: azure-iot-common.SharedAccessSignature.toString
     name: toString
     children: []
@@ -54,7 +52,6 @@ items:
       return:
         type:
           - string
-    module: Global
   - uid: azure-iot-common.SharedAccessSignature.create
     name: create
     children: []
@@ -92,7 +89,6 @@ items:
       - type: ReferenceError
         description: |
           Will be thrown if one of the arguments is falsy.
-    module: Global
   - uid: azure-iot-common.SharedAccessSignature.parse
     name: parse
     children: []
@@ -122,4 +118,3 @@ items:
       - type: FormatError
         description: |
           Will be thrown if the source string is malformed.
-    module: Global

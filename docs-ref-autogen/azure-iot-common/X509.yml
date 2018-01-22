@@ -18,7 +18,6 @@ items:
 
       https://nodejs.org/api/tls.html#tls_tls_connect_options_callback
     package: azure-iot-common
-    module: Global
   - uid: azure-iot-common.X509.cert
     name: cert
     fullName: cert
@@ -33,7 +32,6 @@ items:
       return:
         type:
           - string | "undefined" | Buffer | "undefined"
-    module: Global
   - uid: azure-iot-common.X509.key
     name: key
     fullName: key
@@ -48,7 +46,6 @@ items:
       return:
         type:
           - string | Buffer
-    module: Global
   - uid: azure-iot-common.X509.passphrase
     name: passphrase
     fullName: passphrase
@@ -63,4 +60,3 @@ items:
       return:
         type:
           - string
-    module: Global

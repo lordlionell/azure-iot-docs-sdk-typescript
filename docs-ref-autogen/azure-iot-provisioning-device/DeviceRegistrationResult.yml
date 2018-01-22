@@ -14,7 +14,6 @@ items:
       structure returned from the provisioning service is response to a
       registrationRequest or queryRegistrationStatus operation
     package: azure-iot-provisioning-device
-    module: Global
   - uid: azure-iot-provisioning-device.DeviceRegistrationResult.operationId
     name: operationId
     fullName: operationId
@@ -28,7 +27,6 @@ items:
       return:
         type:
           - string
-    module: Global
   - uid: azure-iot-provisioning-device.DeviceRegistrationResult.registrationState
     name: registrationState
     fullName: registrationState
@@ -43,7 +41,6 @@ items:
       return:
         type:
           - '@azure-iot-provisioning-device.DeviceRegistrationState'
-    module: Global
   - uid: azure-iot-provisioning-device.DeviceRegistrationResult.status
     name: status
     fullName: status
@@ -57,4 +54,3 @@ items:
       return:
         type:
           - RegistrationStatus
-    module: Global

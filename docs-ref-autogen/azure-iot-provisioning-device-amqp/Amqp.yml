@@ -11,4 +11,3 @@ items:
     extends:
       name: EventEmitter
     package: azure-iot-provisioning-device-amqp
-    module: Global

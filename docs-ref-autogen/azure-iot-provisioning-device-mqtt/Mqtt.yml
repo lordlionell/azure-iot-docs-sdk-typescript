@@ -13,7 +13,6 @@ items:
     extends:
       name: EventEmitter
     package: azure-iot-provisioning-device-mqtt
-    module: Global
   - uid: azure-iot-provisioning-device-mqtt.Mqtt.queryOperationStatus
     name: queryOperationStatus
     children: []
@@ -41,7 +40,6 @@ items:
               (err?: Error, result?: DeviceRegistrationResult, response?: any,
               pollingInterval?: number) => void
           description: ''
-    module: Global
   - uid: azure-iot-provisioning-device-mqtt.Mqtt.registrationRequest
     name: registrationRequest
     children: []
@@ -65,4 +63,3 @@ items:
               (err?: Error, result?: DeviceRegistrationResult, response?: any,
               pollingInterval?: number) => void
           description: ''
-    module: Global

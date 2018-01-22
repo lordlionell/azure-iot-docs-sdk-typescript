@@ -12,7 +12,6 @@ items:
     type: interface
     summary: ''
     package: azure-iothub
-    module: Global
   - uid: azure-iothub.Registry.DeviceRegistryOperationError.deviceId
     name: deviceId
     fullName: deviceId
@@ -26,7 +25,6 @@ items:
       return:
         type:
           - string
-    module: Global
   - uid: azure-iothub.Registry.DeviceRegistryOperationError.errorCode
     name: errorCode
     fullName: errorCode
@@ -40,7 +38,6 @@ items:
       return:
         type:
           - Error
-    module: Global
   - uid: azure-iothub.Registry.DeviceRegistryOperationError.errorStatus
     name: errorStatus
     fullName: errorStatus
@@ -54,4 +51,3 @@ items:
       return:
         type:
           - string
-    module: Global

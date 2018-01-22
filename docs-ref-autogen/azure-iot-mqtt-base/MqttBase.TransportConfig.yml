@@ -15,7 +15,6 @@ items:
     type: interface
     summary: ''
     package: azure-iot-mqtt-base
-    module: Global
   - uid: azure-iot-mqtt-base.MqttBase.TransportConfig.clean
     name: clean
     fullName: clean
@@ -30,7 +29,6 @@ items:
       return:
         type:
           - boolean
-    module: Global
   - uid: azure-iot-mqtt-base.MqttBase.TransportConfig.deviceId
     name: deviceId
     fullName: deviceId
@@ -44,7 +42,6 @@ items:
       return:
         type:
           - string
-    module: Global
   - uid: azure-iot-mqtt-base.MqttBase.TransportConfig.host
     name: host
     fullName: host
@@ -58,7 +55,6 @@ items:
       return:
         type:
           - string
-    module: Global
   - uid: azure-iot-mqtt-base.MqttBase.TransportConfig.sharedAccessSignature
     name: sharedAccessSignature
     fullName: sharedAccessSignature
@@ -73,7 +69,6 @@ items:
       return:
         type:
           - string | SharedAccessSignature
-    module: Global
   - uid: azure-iot-mqtt-base.MqttBase.TransportConfig.username
     name: username
     fullName: username
@@ -88,7 +83,6 @@ items:
       return:
         type:
           - string
-    module: Global
   - uid: azure-iot-mqtt-base.MqttBase.TransportConfig.x509
     name: x509
     fullName: x509
@@ -103,4 +97,3 @@ items:
       return:
         type:
           - X509
-    module: Global

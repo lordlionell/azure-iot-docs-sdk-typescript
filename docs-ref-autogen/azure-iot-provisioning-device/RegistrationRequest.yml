@@ -13,7 +13,6 @@ items:
     type: interface
     summary: Information necessary to start a registration
     package: azure-iot-provisioning-device
-    module: Global
   - uid: azure-iot-provisioning-device.RegistrationRequest.forceRegistration
     name: forceRegistration
     fullName: forceRegistration
@@ -28,7 +27,6 @@ items:
       return:
         type:
           - boolean
-    module: Global
   - uid: azure-iot-provisioning-device.RegistrationRequest.idScope
     name: idScope
     fullName: idScope
@@ -42,7 +40,6 @@ items:
       return:
         type:
           - string
-    module: Global
   - uid: azure-iot-provisioning-device.RegistrationRequest.provisioningHost
     name: provisioningHost
     fullName: provisioningHost
@@ -56,7 +53,6 @@ items:
       return:
         type:
           - string
-    module: Global
   - uid: azure-iot-provisioning-device.RegistrationRequest.registrationId
     name: registrationId
     fullName: registrationId
@@ -73,4 +69,3 @@ items:
       return:
         type:
           - string
-    module: Global
