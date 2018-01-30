@@ -13,15 +13,15 @@ items:
       - azure-iot-device.SharedAccessSignatureAuthenticationProvider
       - azure-iot-device.Twin
       - azure-iot-device.X509AuthenticationProvider
-      - azure-iot-device.createWithSharedAccessKey
-      - azure-iot-device.createWithX509Certificate
-      - azure-iot-device.parse
-      - azure-iot-device.create
-      - azure-iot-device.parse
+      - azure-iot-device.global.createWithSharedAccessKey
+      - azure-iot-device.global.createWithX509Certificate
+      - azure-iot-device.global.parse
+      - azure-iot-device.global.create
+      - azure-iot-device.global.parse
     type: package
     langs:
       - typeScript
-  - uid: azure-iot-device.createWithSharedAccessKey
+  - uid: azure-iot-device.global.createWithSharedAccessKey
     name: createWithSharedAccessKey
     children: []
     type: function
@@ -52,7 +52,7 @@ items:
       return:
         type:
           - string
-  - uid: azure-iot-device.createWithX509Certificate
+  - uid: azure-iot-device.global.createWithX509Certificate
     name: createWithX509Certificate
     children: []
     type: function
@@ -76,7 +76,7 @@ items:
       return:
         type:
           - string
-  - uid: azure-iot-device.parse
+  - uid: azure-iot-device.global.parse
     name: parse
     children: []
     type: function
@@ -104,7 +104,7 @@ items:
       - type: azure-iot-common.ArgumentError
         description: |
           if the string is missing one of the required attributes.
-  - uid: azure-iot-device.create
+  - uid: azure-iot-device.global.create
     name: create
     children: []
     type: function
@@ -142,7 +142,7 @@ items:
       - type: ReferenceError
         description: |
           If one of the parameters is falsy.
-  - uid: azure-iot-device.parse
+  - uid: azure-iot-device.global.parse
     name: parse
     children: []
     type: function
