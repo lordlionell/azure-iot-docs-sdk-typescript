@@ -24,13 +24,13 @@ items:
       - azure-iothub.Registry.RegistryStatistics
       - azure-iothub.Registry.TransportConfig
       - azure-iothub.Twin
-      - azure-iothub.global.parse
-      - azure-iothub.global.create
-      - azure-iothub.global.parse
+      - azure-iothub.parse
+      - azure-iothub.create
+      - azure-iothub.parse
     type: package
     langs:
       - typeScript
-  - uid: azure-iothub.global.parse
+  - uid: azure-iothub.parse
     name: parse
     children: []
     type: function
@@ -58,7 +58,7 @@ items:
       - type: azure-iot-common.ArgumentError
         description: |
           if the string is missing one of the required attributes.
-  - uid: azure-iothub.global.create
+  - uid: azure-iothub.create
     name: create
     children: []
     type: function
@@ -100,7 +100,7 @@ items:
       - type: ReferenceError
         description: |
           If one of the parameters is falsy.
-  - uid: azure-iothub.global.parse
+  - uid: azure-iothub.parse
     name: parse
     children: []
     type: function
