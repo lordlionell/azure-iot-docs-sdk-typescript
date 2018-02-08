@@ -5,7 +5,6 @@ items:
     fullName: X509SecurityClient
     children:
       - azure-iot-provisioning-device.X509SecurityClient.getCertificate
-      - azure-iot-provisioning-device.X509SecurityClient.getCertificateChain
       - azure-iot-provisioning-device.X509SecurityClient.getRegistrationId
     langs:
       - typeScript
@@ -29,23 +28,6 @@ items:
             - '(err?: Error, cert?: X509) => void'
           description: |
             called when the operation is complete
-  - uid: azure-iot-provisioning-device.X509SecurityClient.getCertificateChain
-    name: getCertificateChain
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: retrieve the X509 certificate chain
-    syntax:
-      content: >-
-        function getCertificateChain(callback: (err?: Error, cert?: string) =>
-        void)
-      parameters:
-        - id: callback
-          type:
-            - '(err?: Error, cert?: string) => void'
-          description: |
-            called when the operation is copmlete
   - uid: azure-iot-provisioning-device.X509SecurityClient.getRegistrationId
     name: getRegistrationId
     children: []
