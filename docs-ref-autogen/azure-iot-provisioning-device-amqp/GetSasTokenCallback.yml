@@ -1,0 +1,12 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-iot-provisioning-device-amqp.GetSasTokenCallback
+    name: GetSasTokenCallback
+    fullName: GetSasTokenCallback
+    children: []
+    langs:
+      - typeScript
+    type: class
+    summary: |+
+
+    package: azure-iot-provisioning-device-amqp

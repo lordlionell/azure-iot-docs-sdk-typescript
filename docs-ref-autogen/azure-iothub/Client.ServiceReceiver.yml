@@ -30,7 +30,7 @@ items:
           description: ''
         - id: done
           type:
-            - Callback<MessageAbandoned>
+            - '@azure-iothub.Client.Callback<MessageAbandoned>'
           description: ''
           optional: true
   - uid: azure-iothub.Client.ServiceReceiver.complete
@@ -49,7 +49,7 @@ items:
           description: ''
         - id: done
           type:
-            - Callback<MessageCompleted>
+            - '@azure-iothub.Client.Callback<MessageCompleted>'
           description: ''
           optional: true
   - uid: azure-iothub.Client.ServiceReceiver.reject
@@ -68,6 +68,6 @@ items:
           description: ''
         - id: done
           type:
-            - Callback<MessageRejected>
+            - '@azure-iothub.Client.Callback<MessageRejected>'
           description: ''
           optional: true

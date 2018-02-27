@@ -134,4 +134,4 @@ items:
       content: 'provisioningStatus: ProvisioningStatus'
       return:
         type:
-          - ProvisioningStatus
+          - '@azure-iot-provisioning-service.ProvisioningStatus'

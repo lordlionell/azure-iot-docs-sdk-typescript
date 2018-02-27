@@ -4,6 +4,7 @@ items:
     name: Client
     fullName: Client
     children:
+      - azure-iot-device.Client.TransportCtor
       - azure-iot-device.Client.constructor
       - azure-iot-device.Client.abandon
       - azure-iot-device.Client.close
@@ -38,6 +39,16 @@ items:
       to create an IoT Hub device client.
     extends:
       name: EventEmitter
+    package: azure-iot-device
+  - uid: azure-iot-device.Client.TransportCtor
+    name: TransportCtor
+    fullName: TransportCtor
+    children: []
+    langs:
+      - typeScript
+    type: class
+    summary: |+
+
     package: azure-iot-device
   - uid: azure-iot-device.Client.constructor
     name: Client

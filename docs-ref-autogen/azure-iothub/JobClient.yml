@@ -4,6 +4,7 @@ items:
     name: JobClient
     fullName: JobClient
     children:
+      - azure-iothub.JobClient.JobCallback
       - azure-iothub.JobClient.cancelJob
       - azure-iothub.JobClient.createQuery
       - azure-iothub.JobClient.getJob
@@ -26,6 +27,16 @@ items:
       <xref:azure-iothub.JobClient.fromConnectionString> and
       <xref:azure-iothub.JobClient.fromSharedAccessSignature>.
     package: azure-iothub
+  - uid: azure-iothub.JobClient.JobCallback
+    name: JobCallback
+    fullName: JobCallback
+    children: []
+    langs:
+      - typeScript
+    type: class
+    summary: |+
+
+    package: azure-iothub
   - uid: azure-iothub.JobClient.cancelJob
     name: cancelJob
     children: []
@@ -42,7 +53,7 @@ items:
           description: The identifier of an existing job.
         - id: done
           type:
-            - JobCallback
+            - '@azure-iothub.JobClient.JobCallback'
           description: |
             The function to call when the operation is
                                            complete. `done` will be called with three
@@ -65,12 +76,12 @@ items:
       parameters:
         - id: jobType
           type:
-            - JobType
+            - '@azure-iothub.JobType'
           description: The type that should be used to filter results.
           optional: true
         - id: jobStatus
           type:
-            - JobStatus
+            - '@azure-iothub.JobStatus'
           description: The status that should be used to filter results.
           optional: true
         - id: pageSize
@@ -98,7 +109,7 @@ items:
           description: The identifier of an existing job.
         - id: done
           type:
-            - JobCallback
+            - '@azure-iothub.JobClient.JobCallback'
           description: |
             The function to call when the operation is
                                            complete. `done` will be called with three
@@ -149,7 +160,7 @@ items:
           optional: true
         - id: done
           type:
-            - JobCallback
+            - '@azure-iothub.JobClient.JobCallback'
           description: |
             The function to call when the operation is
                                                  complete. `done` will be called with three
@@ -208,7 +219,7 @@ items:
           optional: true
         - id: done
           type:
-            - JobCallback
+            - '@azure-iothub.JobClient.JobCallback'
           description: |
             The function to call when the operation is
                                                  complete. `done` will be called with three

@@ -4,6 +4,7 @@ items:
     name: Message
     fullName: Message
     children:
+      - azure-iot-common.Message.BufferConvertible
       - azure-iot-common.Message.constructor
       - azure-iot-common.Message.ack
       - azure-iot-common.Message.correlationId
@@ -27,6 +28,18 @@ items:
       transport-agnostic, meaning it works the same way over AMQP, MQTT and
       HTTP.
     package: azure-iot-common
+  - uid: azure-iot-common.Message.BufferConvertible
+    name: BufferConvertible
+    fullName: BufferConvertible
+    children: []
+    langs:
+      - typeScript
+    type: class
+    summary: >-
+
+      "BufferConvertible" is a type alias. It refers to Buffer, String, any[]
+      and ArrayBuffer.
+    package: azure-iot-common
   - uid: azure-iot-common.Message.constructor
     name: Message
     children: []
@@ -39,7 +52,7 @@ items:
       parameters:
         - id: data
           type:
-            - BufferConvertible
+            - '@azure-iot-common.Message.BufferConvertible'
           description: >
             a Node
             [Buffer](https://nodejs.org/api/globals.html#globals_class_buffer)
@@ -196,4 +209,4 @@ items:
       parameters: []
       return:
         type:
-          - BufferConvertible
+          - '@azure-iot-common.Message.BufferConvertible'

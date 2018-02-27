@@ -5,6 +5,11 @@ items:
     fullName: Registry
     children:
       - azure-iothub.Registry.JobStatus
+      - azure-iothub.Registry.BulkDeviceIdentityCallback
+      - azure-iothub.Registry.BulkRegistryOperationType
+      - azure-iothub.Registry.DeviceCallback
+      - azure-iothub.Registry.JobCallback
+      - azure-iothub.Registry.ResponseCallback
       - azure-iothub.Registry.addDevices
       - azure-iothub.Registry.cancelJob
       - azure-iothub.Registry.create
@@ -47,6 +52,58 @@ items:
     type: interface
     summary: ''
     package: azure-iothub
+  - uid: azure-iothub.Registry.BulkDeviceIdentityCallback
+    name: BulkDeviceIdentityCallback
+    fullName: BulkDeviceIdentityCallback
+    children: []
+    langs:
+      - typeScript
+    type: class
+    summary: |+
+
+    package: azure-iothub
+  - uid: azure-iothub.Registry.BulkRegistryOperationType
+    name: BulkRegistryOperationType
+    fullName: BulkRegistryOperationType
+    children: []
+    langs:
+      - typeScript
+    type: class
+    summary: >-
+
+      "BulkRegistryOperationType" is a type alias. It refers to "create",
+      "Update", "UpdateIfMatchETag", "Delete" and "DeleteIfMatchETag".
+    package: azure-iothub
+  - uid: azure-iothub.Registry.DeviceCallback
+    name: DeviceCallback
+    fullName: DeviceCallback
+    children: []
+    langs:
+      - typeScript
+    type: class
+    summary: |+
+
+    package: azure-iothub
+  - uid: azure-iothub.Registry.JobCallback
+    name: JobCallback
+    fullName: JobCallback
+    children: []
+    langs:
+      - typeScript
+    type: class
+    summary: |+
+
+    package: azure-iothub
+  - uid: azure-iothub.Registry.ResponseCallback
+    name: ResponseCallback
+    fullName: ResponseCallback
+    children: []
+    langs:
+      - typeScript
+    type: class
+    summary: |+
+
+    package: azure-iothub
   - uid: azure-iothub.Registry.addDevices
     name: addDevices
     children: []
@@ -68,7 +125,7 @@ items:
                                            identifier.
         - id: done
           type:
-            - BulkDeviceIdentityCallback
+            - '@azure-iothub.Registry.BulkDeviceIdentityCallback'
           description: |
             The function to call when the operation is
                                            complete. `done` will be called with three
@@ -94,7 +151,7 @@ items:
             information.
         - id: done
           type:
-            - JobCallback
+            - '@azure-iothub.Registry.JobCallback'
           description: >
             The function to call with two arguments: an error object if an error
             happened,
@@ -117,7 +174,7 @@ items:
                                            with a valid device identifier.
         - id: done
           type:
-            - DeviceCallback
+            - '@azure-iothub.Registry.DeviceCallback'
           description: |
             The function to call when the operation is
                                            complete. `done` will be called with three
@@ -175,7 +232,7 @@ items:
           description: The identifier of an existing device identity.
         - id: done
           type:
-            - ResponseCallback
+            - '@azure-iothub.Registry.ResponseCallback'
           description: |
             The function to call when the operation is
                                            complete. `done` will be called with three
@@ -210,7 +267,7 @@ items:
             exported data.
         - id: done
           type:
-            - JobCallback
+            - '@azure-iothub.Registry.JobCallback'
           description: >
             The function to call when the job has been created, with two
             arguments: an error object if an
@@ -233,7 +290,7 @@ items:
           description: The identifier of an existing device identity.
         - id: done
           type:
-            - DeviceCallback
+            - '@azure-iothub.Registry.DeviceCallback'
           description: |
             The function to call when the operation is
                                            complete. `done` will be called with three
@@ -260,7 +317,7 @@ items:
             information.
         - id: done
           type:
-            - JobCallback
+            - '@azure-iothub.Registry.JobCallback'
           description: >
             The function to call with two arguments: an error object if an error
             happened,
@@ -297,7 +354,7 @@ items:
           description: The device identifier.
         - id: done
           type:
-            - ResponseCallback
+            - '@azure-iothub.Registry.ResponseCallback'
           description: |
             The callback that will be called with either an Error object or
                                             the device twin instance.
@@ -327,7 +384,7 @@ items:
             import process.
         - id: done
           type:
-            - JobCallback
+            - '@azure-iothub.Registry.JobCallback'
           description: >
             The function to call when the job has been created, with two
             arguments: an error object if an
@@ -401,7 +458,7 @@ items:
                                            must match.
         - id: done
           type:
-            - BulkDeviceIdentityCallback
+            - '@azure-iothub.Registry.BulkDeviceIdentityCallback'
           description: |
             The function to call when the operation is
                                            complete. `done` will be called with three
@@ -430,7 +487,7 @@ items:
                                            identifier.
         - id: done
           type:
-            - DeviceCallback
+            - '@azure-iothub.Registry.DeviceCallback'
           description: |
             The function to call when the operation is
                                            complete. `done` will be called with three
@@ -467,7 +524,7 @@ items:
                                            must match.
         - id: done
           type:
-            - BulkDeviceIdentityCallback
+            - '@azure-iothub.Registry.BulkDeviceIdentityCallback'
           description: |
             The function to call when the operation is
                                            complete. `done` will be called with three
@@ -505,7 +562,7 @@ items:
                                             the device twin has been updated since the etag was obtained.
         - id: done
           type:
-            - ResponseCallback
+            - '@azure-iothub.Registry.ResponseCallback'
           description: |
             The callback that will be called with either an Error object or
                                             the device twin instance.
