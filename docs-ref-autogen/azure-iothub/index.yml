@@ -25,6 +25,7 @@ items:
       - azure-iothub.Registry.QueryDescription
       - azure-iothub.Registry.RegistryStatistics
       - azure-iothub.Registry.TransportConfig
+      - azure-iothub.ServiceReceiver
       - azure-iothub.Twin
       - azure-iothub.parse
       - azure-iothub.create
@@ -168,5 +169,7 @@ references:
     name: RegistryStatistics
   - uid: azure-iothub.Registry.TransportConfig
     name: TransportConfig
+  - uid: azure-iothub.ServiceReceiver
+    name: ServiceReceiver
   - uid: azure-iothub.Twin
     name: Twin

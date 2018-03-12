@@ -109,6 +109,9 @@
     - uid: azure-iot-common.TwinDetachedError
       name: TwinDetachedError
       items: []
+    - uid: azure-iot-common.TwinRequestError
+      name: TwinRequestError
+      items: []
     - uid: azure-iot-common.UnauthorizedError
       name: UnauthorizedError
       items: []
@@ -204,6 +207,9 @@
       items: []
     - uid: azure-iot-device.Twin
       name: Twin
+      items: []
+    - uid: azure-iot-device.TwinProperties
+      name: TwinProperties
       items: []
     - uid: azure-iot-device.X509AuthenticationProvider
       name: X509AuthenticationProvider
@@ -432,6 +438,9 @@
       items: []
     - uid: azure-iothub.Registry.TransportConfig
       name: TransportConfig
+      items: []
+    - uid: azure-iothub.ServiceReceiver
+      name: ServiceReceiver
       items: []
     - uid: azure-iothub.Twin
       name: Twin

@@ -167,7 +167,7 @@ items:
       The `getTwin` method creates a Twin object and establishes a connection
       with the Twin service.
     syntax:
-      content: 'function getTwin(done: (err?: Error, twin?: Twin) => void, twin?: Twin)'
+      content: 'function getTwin(done: (err?: Error, twin?: Twin) => void)'
       parameters:
         - id: done
           type:
@@ -175,11 +175,6 @@ items:
           description: |+
             The callback to call when the connection is established.
 
-        - id: twin
-          type:
-            - '@azure-iot-device.Twin'
-          description: ''
-          optional: true
   - uid: azure-iot-device.Client.onDeviceMethod
     name: onDeviceMethod
     children: []
