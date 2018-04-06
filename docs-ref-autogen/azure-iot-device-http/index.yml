@@ -5,12 +5,9 @@ items:
     summary: ''
     children:
       - azure-iot-device-http.Http
-      - azure-iot-device-http.HttpReceiverOptions
     type: package
     langs:
       - typeScript
 references:
   - uid: azure-iot-device-http.Http
     name: Http
-  - uid: azure-iot-device-http.HttpReceiverOptions
-    name: HttpReceiverOptions

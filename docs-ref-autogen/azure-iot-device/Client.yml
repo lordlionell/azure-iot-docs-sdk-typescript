@@ -322,12 +322,12 @@ items:
     summary: The `setOptions` method let the user configure the client.
     syntax:
       content: >-
-        function setOptions(options: any, done?: (err?: Error, result?:
-        TransportConfigured) => void)
+        function setOptions(options: DeviceClientOptions, done?: (err?: Error,
+        result?: TransportConfigured) => void)
       parameters:
         - id: options
           type:
-            - any
+            - '@azure-iot-device.DeviceClientOptions'
           description: The options structure
         - id: done
           type:

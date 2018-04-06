@@ -1,14 +1,14 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: azure-iot-device-http.HttpReceiverOptions
+  - uid: azure-iot-device.HttpReceiverOptions
     name: HttpReceiverOptions
     fullName: HttpReceiverOptions
     children:
-      - azure-iot-device-http.HttpReceiverOptions.at
-      - azure-iot-device-http.HttpReceiverOptions.cron
-      - azure-iot-device-http.HttpReceiverOptions.drain
-      - azure-iot-device-http.HttpReceiverOptions.interval
-      - azure-iot-device-http.HttpReceiverOptions.manualPolling
+      - azure-iot-device.HttpReceiverOptions.at
+      - azure-iot-device.HttpReceiverOptions.cron
+      - azure-iot-device.HttpReceiverOptions.drain
+      - azure-iot-device.HttpReceiverOptions.interval
+      - azure-iot-device.HttpReceiverOptions.manualPolling
     langs:
       - typeScript
     type: interface
@@ -20,22 +20,11 @@ items:
       boolean. Only one `interval`, `at`, `cron` or `manualPolling` shall be
       present in the options structure.
 
-      This is configured by calling <xref:azure-iot-device.Client.setOptions>
-      with an options structure following this format:
-
-      ```js
-
-      {
-        http: {
-          receivePolicy: {
-            ...
-          }
-        }
-      }
-
-      ```
-    package: azure-iot-device-http
-  - uid: azure-iot-device-http.HttpReceiverOptions.at
+      This is configured by calling <xref:Client.setOptions> with this as a
+      property named `receivePolicy` inside of an <xref:HttpTransportOptions>
+      object which is inside of an <xref:DeviceClientOptions> object.
+    package: azure-iot-device
+  - uid: azure-iot-device.HttpReceiverOptions.at
     name: at
     fullName: at
     children: []
@@ -51,7 +40,7 @@ items:
       return:
         type:
           - Date
-  - uid: azure-iot-device-http.HttpReceiverOptions.cron
+  - uid: azure-iot-device.HttpReceiverOptions.cron
     name: cron
     fullName: cron
     children: []
@@ -65,7 +54,7 @@ items:
       return:
         type:
           - string
-  - uid: azure-iot-device-http.HttpReceiverOptions.drain
+  - uid: azure-iot-device.HttpReceiverOptions.drain
     name: drain
     fullName: drain
     children: []
@@ -81,7 +70,7 @@ items:
       return:
         type:
           - boolean
-  - uid: azure-iot-device-http.HttpReceiverOptions.interval
+  - uid: azure-iot-device.HttpReceiverOptions.interval
     name: interval
     fullName: interval
     children: []
@@ -95,7 +84,7 @@ items:
       return:
         type:
           - number
-  - uid: azure-iot-device-http.HttpReceiverOptions.manualPolling
+  - uid: azure-iot-device.HttpReceiverOptions.manualPolling
     name: manualPolling
     fullName: manualPolling
     children: []
