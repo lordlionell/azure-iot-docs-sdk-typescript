@@ -62,7 +62,7 @@ items:
       content: 'properties: TwinProperties'
       return:
         type:
-          - '@azure-iot-device.TwinProperties'
+          - azure-iot-device.TwinProperties
   - uid: azure-iot-device.Twin.desiredPath
     name: desiredPath
     fullName: desiredPath

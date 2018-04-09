@@ -143,4 +143,4 @@ items:
           optional: true
       return:
         type:
-          - '@azure-iot-common.ConnectionString'
+          - azure-iot-common.ConnectionString

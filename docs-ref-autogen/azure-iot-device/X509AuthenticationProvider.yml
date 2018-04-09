@@ -107,4 +107,10 @@ items:
             can use to authenticate with the Azure IoT hub instance.
       return:
         type:
-          - '@azure-iot-device.X509AuthenticationProvider'
+          - azure-iot-device.X509AuthenticationProvider
+references:
+  - uid: azure-iot-device.SharedAccessSignatureAuthenticationProvider
+    spec.typeScript:
+      - name: SharedAccessSignatureAuthenticationProvider
+        fullName: SharedAccessSignatureAuthenticationProvider
+        uid: azure-iot-device.SharedAccessSignatureAuthenticationProvider

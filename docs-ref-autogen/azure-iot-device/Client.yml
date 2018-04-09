@@ -64,7 +64,7 @@ items:
       parameters:
         - id: transport
           type:
-            - '@azure-iot-device.Client.Transport'
+            - azure-iot-device.Client.Transport
           description: |-
             An object that implements the interface
                                                expected of a transport object, e.g.,
@@ -327,7 +327,7 @@ items:
       parameters:
         - id: options
           type:
-            - '@azure-iot-device.DeviceClientOptions'
+            - azure-iot-device.DeviceClientOptions
           description: The options structure
         - id: done
           type:
@@ -473,7 +473,7 @@ items:
             Transport protocol used to connect to IoT hub.
       return:
         type:
-          - '@azure-iot-device.Client'
+          - azure-iot-device.Client
   - uid: azure-iot-device.Client.fromConnectionString
     name: fromConnectionString
     children: []
@@ -500,7 +500,7 @@ items:
           description: ''
       return:
         type:
-          - '@azure-iot-device.Client'
+          - azure-iot-device.Client
     exceptions:
       - type: ReferenceError
         description: |
@@ -531,8 +531,29 @@ items:
           description: ''
       return:
         type:
-          - '@azure-iot-device.Client'
+          - azure-iot-device.Client
     exceptions:
       - type: ReferenceError
         description: |
           If the connStr parameter is falsy.
+references:
+  - uid: azure-iot-device.DeviceMethodResponse
+    spec.typeScript:
+      - name: DeviceMethodResponse
+        fullName: DeviceMethodResponse
+        uid: azure-iot-device.DeviceMethodResponse
+  - uid: azure-iot-device.DeviceClientOptions
+    spec.typeScript:
+      - name: DeviceClientOptions
+        fullName: DeviceClientOptions
+        uid: azure-iot-device.DeviceClientOptions
+  - uid: azure-iot-device.Client.Transport
+    spec.typeScript:
+      - name: Transport
+        fullName: Transport
+        uid: azure-iot-device.Client.Transport
+  - uid: azure-iot-device.Client
+    spec.typeScript:
+      - name: Client
+        fullName: Client
+        uid: azure-iot-device.Client

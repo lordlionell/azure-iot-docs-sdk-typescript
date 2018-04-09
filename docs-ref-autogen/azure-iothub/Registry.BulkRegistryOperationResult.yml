@@ -23,7 +23,7 @@ items:
       content: 'errors: DeviceRegistryOperationError[]'
       return:
         type:
-          - '@azure-iothub.Registry.DeviceRegistryOperationError[]'
+          - 'azure-iothub.Registry.DeviceRegistryOperationError[]'
   - uid: azure-iothub.Registry.BulkRegistryOperationResult.isSuccessful
     name: isSuccessful
     fullName: isSuccessful
@@ -37,3 +37,13 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'Callback<azure-iothub.Twin[]>'
+    spec.typeScript:
+      - name: Callback<
+        fullName: Callback<
+      - name: Twin
+        fullName: Twin
+        uid: azure-iothub.Twin
+      - name: '[]>'
+        fullName: '[]>'

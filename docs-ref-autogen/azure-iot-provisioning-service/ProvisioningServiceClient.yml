@@ -75,7 +75,7 @@ items:
       parameters:
         - id: querySpecification
           type:
-            - '@azure-iot-provisioning-service.QuerySpecification'
+            - azure-iot-provisioning-service.QuerySpecification
           description: The query specification.
         - id: enrollmentGroupId
           type:
@@ -89,7 +89,7 @@ items:
           optional: true
       return:
         type:
-          - '@azure-iot-provisioning-service.Query'
+          - azure-iot-provisioning-service.Query
   - uid: >-
       azure-iot-provisioning-service.ProvisioningServiceClient.createEnrollmentGroupQuery
     name: createEnrollmentGroupQuery
@@ -107,7 +107,7 @@ items:
       parameters:
         - id: querySpecification
           type:
-            - '@azure-iot-provisioning-service.QuerySpecification'
+            - azure-iot-provisioning-service.QuerySpecification
           description: The query specification.
         - id: pageSize
           type:
@@ -117,7 +117,7 @@ items:
           optional: true
       return:
         type:
-          - '@azure-iot-provisioning-service.Query'
+          - azure-iot-provisioning-service.Query
   - uid: >-
       azure-iot-provisioning-service.ProvisioningServiceClient.createIndividualEnrollmentQuery
     name: createIndividualEnrollmentQuery
@@ -133,7 +133,7 @@ items:
       parameters:
         - id: querySpecification
           type:
-            - '@azure-iot-provisioning-service.QuerySpecification'
+            - azure-iot-provisioning-service.QuerySpecification
           description: The query specification.
         - id: pageSize
           type:
@@ -143,7 +143,7 @@ items:
           optional: true
       return:
         type:
-          - '@azure-iot-provisioning-service.Query'
+          - azure-iot-provisioning-service.Query
   - uid: >-
       azure-iot-provisioning-service.ProvisioningServiceClient.createOrUpdateEnrollmentGroup
     name: createOrUpdateEnrollmentGroup
@@ -160,7 +160,7 @@ items:
       parameters:
         - id: enrollmentGroup
           type:
-            - '@azure-iot-provisioning-service.EnrollmentGroup'
+            - azure-iot-provisioning-service.EnrollmentGroup
           description: The device enrollment group.
         - id: callback
           type:
@@ -186,7 +186,7 @@ items:
       parameters:
         - id: enrollment
           type:
-            - '@azure-iot-provisioning-service.IndividualEnrollment'
+            - azure-iot-provisioning-service.IndividualEnrollment
           description: The device enrollment record.
         - id: callback
           type:
@@ -212,20 +212,20 @@ items:
       parameters:
         - id: idOrRegistrationState
           type:
-            - string | DeviceRegistrationState
+            - string | azure-iot-provisioning-service.DeviceRegistrationState
           description: >-
             A string containing the registration id OR an actual
             DeviceRegistrationState.
         - id: etagOrCallback
           type:
-            - string | DeleteCallback
+            - string | azure-iot-provisioning-service.DeleteCallback
           description: >-
             In the case of the first argument being a string this could be an
             etag (or the callback).
           optional: true
         - id: deleteCallback
           type:
-            - '@azure-iot-provisioning-service.DeleteCallback'
+            - azure-iot-provisioning-service.DeleteCallback
           description: |
             Invoked upon completion of the operation.
           optional: true
@@ -245,20 +245,20 @@ items:
       parameters:
         - id: enrollmentGroupOrId
           type:
-            - string | EnrollmentGroup
+            - string | azure-iot-provisioning-service.EnrollmentGroup
           description: >-
             EnrollmentGroup object or a string containing the enrollment Group
             Id.
         - id: etagOrCallback
           type:
-            - string | DeleteCallback
+            - string | azure-iot-provisioning-service.DeleteCallback
           description: >-
             In the case of the first argument being a string this could be an
             etag (or the callback).
           optional: true
         - id: deleteCallback
           type:
-            - '@azure-iot-provisioning-service.DeleteCallback'
+            - azure-iot-provisioning-service.DeleteCallback
           description: |
             Invoked upon completion of the operation.
           optional: true
@@ -278,20 +278,20 @@ items:
       parameters:
         - id: enrollmentOrId
           type:
-            - string | IndividualEnrollment
+            - string | azure-iot-provisioning-service.IndividualEnrollment
           description: >-
             An IndividualEnrollment object or a string containing the
             registration id.
         - id: etagOrCallback
           type:
-            - string | DeleteCallback
+            - string | azure-iot-provisioning-service.DeleteCallback
           description: >-
             In the case of the first argument being a string this could be an
             etag (or the callback).
           optional: true
         - id: deleteCallback
           type:
-            - '@azure-iot-provisioning-service.DeleteCallback'
+            - azure-iot-provisioning-service.DeleteCallback
           description: |
             Invoked upon completion of the operation.
           optional: true
@@ -384,7 +384,7 @@ items:
       parameters:
         - id: bulkEnrollmentOperation
           type:
-            - '@azure-iot-provisioning-service.BulkEnrollmentOperation'
+            - azure-iot-provisioning-service.BulkEnrollmentOperation
           description: >-
             An object that specifies the single kind of CRUD operations on the
             array of IndividualEnrollment objects that are also part of the
@@ -420,4 +420,68 @@ items:
                                          permissions.
       return:
         type:
-          - '@azure-iot-provisioning-service.ProvisioningServiceClient'
+          - azure-iot-provisioning-service.ProvisioningServiceClient
+references:
+  - uid: azure-iot-provisioning-service.QuerySpecification
+    spec.typeScript:
+      - name: QuerySpecification
+        fullName: QuerySpecification
+        uid: azure-iot-provisioning-service.QuerySpecification
+  - uid: azure-iot-provisioning-service.Query
+    spec.typeScript:
+      - name: Query
+        fullName: Query
+        uid: azure-iot-provisioning-service.Query
+  - uid: azure-iot-provisioning-service.EnrollmentGroup
+    spec.typeScript:
+      - name: EnrollmentGroup
+        fullName: EnrollmentGroup
+        uid: azure-iot-provisioning-service.EnrollmentGroup
+  - uid: azure-iot-provisioning-service.IndividualEnrollment
+    spec.typeScript:
+      - name: IndividualEnrollment
+        fullName: IndividualEnrollment
+        uid: azure-iot-provisioning-service.IndividualEnrollment
+  - uid: string | azure-iot-provisioning-service.DeviceRegistrationState
+    spec.typeScript:
+      - name: 'string | '
+        fullName: 'string | '
+      - name: DeviceRegistrationState
+        fullName: DeviceRegistrationState
+        uid: azure-iot-provisioning-service.DeviceRegistrationState
+  - uid: string | azure-iot-provisioning-service.DeleteCallback
+    spec.typeScript:
+      - name: 'string | '
+        fullName: 'string | '
+      - name: DeleteCallback
+        fullName: DeleteCallback
+        uid: azure-iot-provisioning-service.DeleteCallback
+  - uid: azure-iot-provisioning-service.DeleteCallback
+    spec.typeScript:
+      - name: DeleteCallback
+        fullName: DeleteCallback
+        uid: azure-iot-provisioning-service.DeleteCallback
+  - uid: string | azure-iot-provisioning-service.EnrollmentGroup
+    spec.typeScript:
+      - name: 'string | '
+        fullName: 'string | '
+      - name: EnrollmentGroup
+        fullName: EnrollmentGroup
+        uid: azure-iot-provisioning-service.EnrollmentGroup
+  - uid: string | azure-iot-provisioning-service.IndividualEnrollment
+    spec.typeScript:
+      - name: 'string | '
+        fullName: 'string | '
+      - name: IndividualEnrollment
+        fullName: IndividualEnrollment
+        uid: azure-iot-provisioning-service.IndividualEnrollment
+  - uid: azure-iot-provisioning-service.BulkEnrollmentOperation
+    spec.typeScript:
+      - name: BulkEnrollmentOperation
+        fullName: BulkEnrollmentOperation
+        uid: azure-iot-provisioning-service.BulkEnrollmentOperation
+  - uid: azure-iot-provisioning-service.ProvisioningServiceClient
+    spec.typeScript:
+      - name: ProvisioningServiceClient
+        fullName: ProvisioningServiceClient
+        uid: azure-iot-provisioning-service.ProvisioningServiceClient

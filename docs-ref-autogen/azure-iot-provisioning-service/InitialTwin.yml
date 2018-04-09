@@ -36,4 +36,10 @@ items:
       content: 'tags: TwinCollection'
       return:
         type:
-          - '@azure-iot-provisioning-service.TwinCollection'
+          - azure-iot-provisioning-service.TwinCollection
+references:
+  - uid: azure-iot-provisioning-service.TwinCollection
+    spec.typeScript:
+      - name: TwinCollection
+        fullName: TwinCollection
+        uid: azure-iot-provisioning-service.TwinCollection

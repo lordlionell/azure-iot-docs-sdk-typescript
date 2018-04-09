@@ -98,4 +98,4 @@ items:
           optional: true
       return:
         type:
-          - '@azure-iot-device.SharedAccessKeyAuthenticationProvider'
+          - azure-iot-device.SharedAccessKeyAuthenticationProvider

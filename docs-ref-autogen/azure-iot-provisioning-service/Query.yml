@@ -69,12 +69,25 @@ items:
       parameters:
         - id: continuationTokenOrCallback
           type:
-            - string | QueryCallback
+            - string | azure-iot-provisioning-service.QueryCallback
           description: ''
         - id: done
           type:
-            - '@azure-iot-provisioning-service.QueryCallback'
+            - azure-iot-provisioning-service.QueryCallback
           description: |
             The callback that will be called with either an Error object or
                                                       the results of the query.
           optional: true
+references:
+  - uid: string | azure-iot-provisioning-service.QueryCallback
+    spec.typeScript:
+      - name: 'string | '
+        fullName: 'string | '
+      - name: QueryCallback
+        fullName: QueryCallback
+        uid: azure-iot-provisioning-service.QueryCallback
+  - uid: azure-iot-provisioning-service.QueryCallback
+    spec.typeScript:
+      - name: QueryCallback
+        fullName: QueryCallback
+        uid: azure-iot-provisioning-service.QueryCallback

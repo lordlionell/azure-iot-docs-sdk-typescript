@@ -27,7 +27,7 @@ items:
       content: 'type: AuthenticationType'
       return:
         type:
-          - '@azure-iot-common.AuthenticationType'
+          - azure-iot-common.AuthenticationType
   - uid: azure-iot-common.AuthenticationProvider.getDeviceCredentials
     name: getDeviceCredentials
     children: []
@@ -44,3 +44,9 @@ items:
           type:
             - '(err: Error, credentials?: TransportConfig) => void'
           description: ''
+references:
+  - uid: azure-iot-common.AuthenticationType
+    spec.typeScript:
+      - name: AuthenticationType
+        fullName: AuthenticationType
+        uid: azure-iot-common.AuthenticationType

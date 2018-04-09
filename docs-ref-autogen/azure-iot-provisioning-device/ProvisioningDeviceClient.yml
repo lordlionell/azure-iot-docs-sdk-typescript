@@ -39,8 +39,23 @@ items:
           description: Transport instance to use
         - id: securityClient
           type:
-            - X509SecurityClient | TpmSecurityClient
+            - >-
+              azure-iot-provisioning-device.X509SecurityClient |
+              TpmSecurityClient
           description: ''
       return:
         type:
-          - '@azure-iot-provisioning-device.RegistrationClient'
+          - azure-iot-provisioning-device.RegistrationClient
+references:
+  - uid: azure-iot-provisioning-device.X509SecurityClient | TpmSecurityClient
+    spec.typeScript:
+      - name: X509SecurityClient
+        fullName: X509SecurityClient
+        uid: azure-iot-provisioning-device.X509SecurityClient
+      - name: ' | TpmSecurityClient'
+        fullName: ' | TpmSecurityClient'
+  - uid: azure-iot-provisioning-device.RegistrationClient
+    spec.typeScript:
+      - name: RegistrationClient
+        fullName: RegistrationClient
+        uid: azure-iot-provisioning-device.RegistrationClient

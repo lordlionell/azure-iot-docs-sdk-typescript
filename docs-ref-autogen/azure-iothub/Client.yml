@@ -70,7 +70,7 @@ items:
       parameters:
         - id: done
           type:
-            - '@azure-iothub.Client.Callback<Disconnected>'
+            - azure-iothub.Client.Callback<Disconnected>
           description: |
             The function to call when the operation is
                                        complete. `done` will be passed an Error object
@@ -91,8 +91,7 @@ items:
       parameters:
         - id: done
           type:
-            - >-
-              @azure-iothub.Client.Callback<@azure-iothub.Client.ServiceReceiver>
+            - azure-iothub.Client.Callback<azure-iothub.Client.ServiceReceiver>
           description: |
             The function to call when the operation is
                                          complete. `done` will be called with two
@@ -112,8 +111,7 @@ items:
       parameters:
         - id: done
           type:
-            - >-
-              @azure-iothub.Client.Callback<@azure-iothub.Client.ServiceReceiver>
+            - azure-iothub.Client.Callback<azure-iothub.Client.ServiceReceiver>
           description: |
             The function to call when the operation is
                                          complete. `done` will be called with two
@@ -137,11 +135,11 @@ items:
           description: The identifier of an existing device identity.
         - id: methodParams
           type:
-            - '@azure-iothub.DeviceMethodParams'
+            - azure-iothub.DeviceMethodParams
           description: ''
         - id: done
           type:
-            - '@azure-iothub.Client.Callback<any>'
+            - azure-iothub.Client.Callback<any>
           description: |
             The callback to call with the result of the method execution.
           optional: true
@@ -163,7 +161,7 @@ items:
       parameters:
         - id: done
           type:
-            - '@azure-iothub.Client.Callback<Connected>'
+            - azure-iothub.Client.Callback<Connected>
           description: |
             The function to call when the operation is
                                        complete. `done` will be passed an Error object
@@ -179,8 +177,8 @@ items:
     summary: Sends a message to a device.
     syntax:
       content: >-
-        function send(deviceId: string, message: BufferConvertible, done?:
-        Callback<MessageEnqueued>)
+        function send(deviceId: string, message: Message | BufferConvertible,
+        done?: Callback<MessageEnqueued>)
       parameters:
         - id: deviceId
           type:
@@ -188,7 +186,7 @@ items:
           description: The identifier of an existing device identity.
         - id: message
           type:
-            - BufferConvertible
+            - Message | BufferConvertible
           description: |-
             The body of the message to send to the device.
                                          If `message` is not of type
@@ -196,7 +194,7 @@ items:
                                          it will be converted.
         - id: done
           type:
-            - '@azure-iothub.Client.Callback<MessageEnqueued>'
+            - azure-iothub.Client.Callback<MessageEnqueued>
           description: |
             The function to call when the operation is
                                          complete. `done` will be called with two
@@ -252,12 +250,12 @@ items:
                                              connect" permissions on an IoT hub.
         - id: transportCtor
           type:
-            - '@azure-iothub.Client.TransportCtor'
+            - azure-iothub.Client.TransportCtor
           description: ''
           optional: true
       return:
         type:
-          - '@azure-iothub.Client'
+          - azure-iothub.Client
   - uid: azure-iothub.Client.fromSharedAccessSignature
     name: fromSharedAccessSignature
     children: []
@@ -281,9 +279,86 @@ items:
                                        "service connect" permissions on an IoT hub.
         - id: transportCtor
           type:
-            - '@azure-iothub.Client.TransportCtor'
+            - azure-iothub.Client.TransportCtor
           description: ''
           optional: true
       return:
         type:
-          - '@azure-iothub.Client'
+          - azure-iothub.Client
+references:
+  - uid: azure-iothub.Client.Callback<MessageAbandoned>
+    spec.typeScript:
+      - name: Callback
+        fullName: Callback
+        uid: azure-iothub.Client.Callback
+      - name: <MessageAbandoned>
+        fullName: <MessageAbandoned>
+  - uid: azure-iothub.Client.Callback<MessageCompleted>
+    spec.typeScript:
+      - name: Callback
+        fullName: Callback
+        uid: azure-iothub.Client.Callback
+      - name: <MessageCompleted>
+        fullName: <MessageCompleted>
+  - uid: azure-iothub.Client.Callback<MessageRejected>
+    spec.typeScript:
+      - name: Callback
+        fullName: Callback
+        uid: azure-iothub.Client.Callback
+      - name: <MessageRejected>
+        fullName: <MessageRejected>
+  - uid: azure-iothub.Client.Callback<Connected>
+    spec.typeScript:
+      - name: Callback
+        fullName: Callback
+        uid: azure-iothub.Client.Callback
+      - name: <Connected>
+        fullName: <Connected>
+  - uid: azure-iothub.Client.Callback<Disconnected>
+    spec.typeScript:
+      - name: Callback
+        fullName: Callback
+        uid: azure-iothub.Client.Callback
+      - name: <Disconnected>
+        fullName: <Disconnected>
+  - uid: azure-iothub.Client.Callback<azure-iothub.Client.ServiceReceiver>
+    spec.typeScript:
+      - name: Callback
+        fullName: Callback
+        uid: azure-iothub.Client.Callback
+      - name: <
+        fullName: <
+      - name: ServiceReceiver
+        fullName: ServiceReceiver
+        uid: azure-iothub.Client.ServiceReceiver
+      - name: '>'
+        fullName: '>'
+  - uid: azure-iothub.Client.Callback<MessageEnqueued>
+    spec.typeScript:
+      - name: Callback
+        fullName: Callback
+        uid: azure-iothub.Client.Callback
+      - name: <MessageEnqueued>
+        fullName: <MessageEnqueued>
+  - uid: azure-iothub.DeviceMethodParams
+    spec.typeScript:
+      - name: DeviceMethodParams
+        fullName: DeviceMethodParams
+        uid: azure-iothub.DeviceMethodParams
+  - uid: azure-iothub.Client.Callback<any>
+    spec.typeScript:
+      - name: Callback
+        fullName: Callback
+        uid: azure-iothub.Client.Callback
+      - name: <any>
+        fullName: <any>
+  - uid: azure-iothub.Client.TransportCtor
+    spec.typeScript:
+      - name: TransportCtor
+        fullName: TransportCtor
+        uid: azure-iothub.Client.TransportCtor
+  - uid: azure-iothub.Client
+    spec.typeScript:
+      - name: Client
+        fullName: Client
+        uid: azure-iothub.Client

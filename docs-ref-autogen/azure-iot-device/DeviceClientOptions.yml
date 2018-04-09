@@ -30,7 +30,7 @@ items:
       content: 'amqp?: AmqpTransportOptions'
       return:
         type:
-          - '@azure-iot-device.AmqpTransportOptions'
+          - azure-iot-device.AmqpTransportOptions
   - uid: azure-iot-device.DeviceClientOptions.ca
     name: ca
     fullName: ca
@@ -69,7 +69,7 @@ items:
       content: 'http?: HttpTransportOptions'
       return:
         type:
-          - '@azure-iot-device.HttpTransportOptions'
+          - azure-iot-device.HttpTransportOptions
   - uid: azure-iot-device.DeviceClientOptions.mqtt
     name: mqtt
     fullName: mqtt
@@ -83,4 +83,4 @@ items:
       content: 'mqtt?: MqttTransportOptions'
       return:
         type:
-          - '@azure-iot-device.MqttTransportOptions'
+          - azure-iot-device.MqttTransportOptions

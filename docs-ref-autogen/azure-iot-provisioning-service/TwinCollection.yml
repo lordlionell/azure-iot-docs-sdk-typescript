@@ -37,7 +37,7 @@ items:
       content: 'metadata: Metadata'
       return:
         type:
-          - '@azure-iot-provisioning-service.Metadata'
+          - azure-iot-provisioning-service.Metadata
   - uid: azure-iot-provisioning-service.TwinCollection.version
     name: version
     fullName: version
@@ -51,3 +51,9 @@ items:
       return:
         type:
           - number
+references:
+  - uid: azure-iot-provisioning-service.Metadata
+    spec.typeScript:
+      - name: Metadata
+        fullName: Metadata
+        uid: azure-iot-provisioning-service.Metadata

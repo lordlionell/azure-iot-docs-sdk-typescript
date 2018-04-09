@@ -84,7 +84,7 @@ items:
             00:00:00 UTC on 1 January 1970.
       return:
         type:
-          - '@azure-iot-common.SharedAccessSignature'
+          - azure-iot-common.SharedAccessSignature
     exceptions:
       - type: ReferenceError
         description: |
@@ -113,7 +113,7 @@ items:
           optional: true
       return:
         type:
-          - '@azure-iot-common.SharedAccessSignature'
+          - azure-iot-common.SharedAccessSignature
     exceptions:
       - type: FormatError
         description: |

@@ -27,7 +27,7 @@ items:
       content: 'errors: Array<BulkEnrollmentOperationError>'
       return:
         type:
-          - Array<@azure-iot-provisioning-service.BulkEnrollmentOperationError>
+          - Array<azure-iot-provisioning-service.BulkEnrollmentOperationError>
   - uid: azure-iot-provisioning-service.BulkEnrollmentOperationResult.isSuccessful
     name: isSuccessful
     fullName: isSuccessful
@@ -44,3 +44,13 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: Array<azure-iot-provisioning-service.BulkEnrollmentOperationError>
+    spec.typeScript:
+      - name: Array<
+        fullName: Array<
+      - name: BulkEnrollmentOperationError
+        fullName: BulkEnrollmentOperationError
+        uid: azure-iot-provisioning-service.BulkEnrollmentOperationError
+      - name: '>'
+        fullName: '>'

@@ -111,4 +111,10 @@ items:
             for authentication with the IoT hub.
       return:
         type:
-          - '@azure-iot-device.SharedAccessSignatureAuthenticationProvider'
+          - azure-iot-device.SharedAccessSignatureAuthenticationProvider
+references:
+  - uid: azure-iot-device.HttpReceiverOptions
+    spec.typeScript:
+      - name: HttpReceiverOptions
+        fullName: HttpReceiverOptions
+        uid: azure-iot-device.HttpReceiverOptions

@@ -104,4 +104,10 @@ items:
       content: 'x509?: X509'
       return:
         type:
-          - '@azure-iot-common.X509'
+          - azure-iot-common.X509
+references:
+  - uid: azure-iot-common.X509
+    spec.typeScript:
+      - name: X509
+        fullName: X509
+        uid: azure-iot-common.X509

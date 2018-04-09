@@ -37,3 +37,13 @@ items:
       return:
         type:
           - string | SharedAccessSignature
+references:
+  - uid: 'Callback<azure-iothub.Twin[]>'
+    spec.typeScript:
+      - name: Callback<
+        fullName: Callback<
+      - name: Twin
+        fullName: Twin
+        uid: azure-iothub.Twin
+      - name: '[]>'
+        fullName: '[]>'
