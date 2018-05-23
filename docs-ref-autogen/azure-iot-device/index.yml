@@ -24,6 +24,7 @@ items:
       - azure-iot-device.parse
       - azure-iot-device.create
       - azure-iot-device.parse
+      - azure-iot-device.getUserAgentString
     type: package
     langs:
       - typeScript
@@ -171,6 +172,20 @@ items:
       - type: FormatError
         description: |
           If the string cannot be parsed or is missing required parameters.
+  - uid: azure-iot-device.getUserAgentString
+    name: getUserAgentString
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getUserAgentString(done: (agent: string) => void)'
+      parameters:
+        - id: done
+          type:
+            - '(agent: string) => void'
+          description: ''
 references:
   - uid: azure-iot-device.Client
     name: Client
