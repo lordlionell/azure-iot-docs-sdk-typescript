@@ -298,6 +298,9 @@
     - uid: azure-iot-provisioning-service.BulkEnrollmentOperationResult
       name: BulkEnrollmentOperationResult
       items: []
+    - uid: azure-iot-provisioning-service.DeviceCapabilities
+      name: DeviceCapabilities
+      items: []
     - uid: azure-iot-provisioning-service.DeviceRegistrationState
       name: DeviceRegistrationState
       items: []
