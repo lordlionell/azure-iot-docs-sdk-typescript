@@ -113,8 +113,8 @@ items:
         type:
           - azure-iot-device.SharedAccessSignatureAuthenticationProvider
 references:
-  - uid: azure-iot-device.HttpReceiverOptions
+  - uid: azure-iot-device.SharedAccessKeyAuthenticationProvider
     spec.typeScript:
-      - name: HttpReceiverOptions
-        fullName: HttpReceiverOptions
-        uid: azure-iot-device.HttpReceiverOptions
+      - name: SharedAccessKeyAuthenticationProvider
+        fullName: SharedAccessKeyAuthenticationProvider
+        uid: azure-iot-device.SharedAccessKeyAuthenticationProvider

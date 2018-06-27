@@ -10,22 +10,38 @@ items:
       - azure-iothub.Registry.DeviceCallback
       - azure-iothub.Registry.JobCallback
       - azure-iothub.Registry.ResponseCallback
+      - azure-iothub.Registry.addConfiguration
       - azure-iothub.Registry.addDevices
+      - azure-iothub.Registry.addModule
+      - azure-iothub.Registry.applyConfigurationContentOnDevice
       - azure-iothub.Registry.cancelJob
       - azure-iothub.Registry.create
       - azure-iothub.Registry.createQuery
       - azure-iothub.Registry.delete
       - azure-iothub.Registry.exportDevicesToBlob
       - azure-iothub.Registry.get
+      - azure-iothub.Registry.getConfiguration
+      - azure-iothub.Registry.getConfigurations
       - azure-iothub.Registry.getJob
+      - azure-iothub.Registry.getModule
+      - azure-iothub.Registry.getModuleTwin
+      - azure-iothub.Registry.getModulesOnDevice
       - azure-iothub.Registry.getRegistryStatistics
       - azure-iothub.Registry.getTwin
       - azure-iothub.Registry.importDevicesFromBlob
       - azure-iothub.Registry.list
       - azure-iothub.Registry.listJobs
+      - azure-iothub.Registry.removeConfiguration
       - azure-iothub.Registry.removeDevices
+      - azure-iothub.Registry.removeModule
+      - azure-iothub.Registry.removeModule_1
       - azure-iothub.Registry.update
+      - azure-iothub.Registry.updateConfiguration
+      - azure-iothub.Registry.updateConfiguration_1
       - azure-iothub.Registry.updateDevices
+      - azure-iothub.Registry.updateModule
+      - azure-iothub.Registry.updateModule_1
+      - azure-iothub.Registry.updateModuleTwin
       - azure-iothub.Registry.updateTwin
       - azure-iothub.Registry.fromConnectionString
       - azure-iothub.Registry.fromSharedAccessSignature
@@ -104,6 +120,40 @@ items:
     summary: |+
 
     package: azure-iothub
+  - uid: azure-iothub.Registry.addConfiguration
+    name: addConfiguration
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Add a configuration to an IoT hub.
+    syntax:
+      content: >-
+        function addConfiguration(configuration: Configuration, done:
+        ResponseCallback)
+      parameters:
+        - id: configuration
+          type:
+            - azure-iothub.Configuration
+          description: |-
+            An object of type module:azure-iothub.Configuration
+                                                 to add to the hub
+        - id: done
+          type:
+            - azure-iothub.Registry.ResponseCallback
+          description: |
+            The function to call when the operation is
+                                                 complete. `done` will be called with three
+                                                 arguments: an Error object (can be null), the
+                                                 body of the response, and a transport-specific
+                                                 response object useful for logging or
+                                                 debugging.
+    exceptions:
+      - type: ReferenceError
+        description: The configuration or done parameter is falsy.
+      - type: ArgumentError
+        description: |
+          The configuration object is missing the id property
   - uid: azure-iothub.Registry.addDevices
     name: addDevices
     children: []
@@ -133,6 +183,70 @@ items:
                                            BulkRegistryOperationResult
                                            and a transport-specific response object useful
                                            for logging or debugging.
+  - uid: azure-iothub.Registry.addModule
+    name: addModule
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Add the given module to the registry.
+    syntax:
+      content: 'function addModule(module: Module, done: ResponseCallback)'
+      parameters:
+        - id: module
+          type:
+            - azure-iothub.Module
+          description: Module object to add to the registry.
+        - id: done
+          type:
+            - azure-iothub.Registry.ResponseCallback
+          description: |
+            The function to call when the operation is
+                                           complete. `done` will be called with three
+                                           arguments: an Error object (can be null), the
+                                           body of the response, and a transport-specific
+                                           response object useful for logging or
+                                           debugging.
+    exceptions:
+      - type: ReferenceError
+        description: If the module or done argument is falsy.
+      - type: ArgumentError
+        description: |
+          If the module object is missing a deviceId or moduleId value.
+  - uid: azure-iothub.Registry.applyConfigurationContentOnDevice
+    name: applyConfigurationContentOnDevice
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Apply the given configuration to a device on an IoT Hub
+    syntax:
+      content: >-
+        function applyConfigurationContentOnDevice(deviceId: string, content:
+        ConfigurationContent, done: ResponseCallback)
+      parameters:
+        - id: deviceId
+          type:
+            - string
+          description: ID of the device to apply the configuration to
+        - id: content
+          type:
+            - azure-iothub.ConfigurationContent
+          description: The Configuration to apply
+        - id: done
+          type:
+            - azure-iothub.Registry.ResponseCallback
+          description: |
+            The function to call when the operation is
+                                                     complete. `done` will be called with three
+                                                     arguments: an Error object (can be null), the
+                                                     body of the response, and a transport-specific
+                                                     response object useful for logging or
+                                                     debugging.
+    exceptions:
+      - type: ReferenceError
+        description: |
+          If the deviceId, content, or done argument is falsy.
   - uid: azure-iothub.Registry.cancelJob
     name: cancelJob
     children: []
@@ -299,6 +413,59 @@ items:
                                            object representing the created device
                                            identity, and a transport-specific response
                                            object useful for logging or debugging.
+  - uid: azure-iothub.Registry.getConfiguration
+    name: getConfiguration
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Get a single configuration from an IoT Hub
+    syntax:
+      content: >-
+        function getConfiguration(configurationId: string, done: (err: Error,
+        configuration?: Configuration, response?: any) => void)
+      parameters:
+        - id: configurationId
+          type:
+            - string
+          description: The ID of the configuration you with to retrieve
+        - id: done
+          type:
+            - >-
+              (err: Error, configuration?: Configuration, response?: any) =>
+              void
+          description: |
+            The callback which will be called with either an Error object
+                                                 or a module:azure-iothub.Configuration object with the configuration details.
+    exceptions:
+      - type: ReferenceError
+        description: |
+          The configurationId or done argument is falsy
+  - uid: azure-iothub.Registry.getConfigurations
+    name: getConfigurations
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Get all configurations on an IoT Hub
+    syntax:
+      content: >-
+        function getConfigurations(done: (err: Error, configurations?:
+        Configuration[], response?: any) => void)
+      parameters:
+        - id: done
+          type:
+            - >-
+              (err: Error, configurations?: Configuration[], response?: any) =>
+              void
+          description: |
+            The callback which will be called with either an Error object
+                                                 or an array of module:azure-iothub.Configuration objects
+                                                 for all the configurations.
+    exceptions:
+      - type: ReferenceError
+        description: |
+          The done argument is falsy
   - uid: azure-iothub.Registry.getJob
     name: getJob
     children: []
@@ -322,6 +489,93 @@ items:
             The function to call with two arguments: an error object if an error
             happened,
                                          (null otherwise) and the status of the job whose identifier was passed as an argument.
+  - uid: azure-iothub.Registry.getModule
+    name: getModule
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Get a single module from a device on an IoT Hub
+    syntax:
+      content: >-
+        function getModule(deviceId: string, moduleId: string, done: (err:
+        Error, module?: Module, response?: any) => void)
+      parameters:
+        - id: deviceId
+          type:
+            - string
+          description: Device ID that owns the module.
+        - id: moduleId
+          type:
+            - string
+          description: Module ID to retrieve
+        - id: done
+          type:
+            - '(err: Error, module?: Module, response?: any) => void'
+          description: |
+            The callback which will be called with either an Error object
+                                         or the module:azure-iothub.Module object for the requested module
+    exceptions:
+      - type: ReferenceError
+        description: |
+          If the deviceId, moduleId, or done argument is falsy.
+  - uid: azure-iothub.Registry.getModuleTwin
+    name: getModuleTwin
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets the Module Twin of the module with the specified module identifier.
+    syntax:
+      content: >-
+        function getModuleTwin(deviceId: string, moduleId: string, done: (err:
+        Error, twin?: Twin, response?: any) => void)
+      parameters:
+        - id: deviceId
+          type:
+            - string
+          description: The device identifier.
+        - id: moduleId
+          type:
+            - string
+          description: The module identifier.
+        - id: done
+          type:
+            - '(err: Error, twin?: Twin, response?: any) => void'
+          description: |-
+            The callback that will be called with either an Error object or
+                                            the module twin instance.
+    exceptions:
+      - type: ReferenceError
+        description: |
+          If the deviceId, moduleId, or done argument is falsy.
+  - uid: azure-iothub.Registry.getModulesOnDevice
+    name: getModulesOnDevice
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Get a list of all modules on an IoT Hub device
+    syntax:
+      content: >-
+        function getModulesOnDevice(deviceId: string, done: (err: Error,
+        modules?: Module[], response?: any) => void)
+      parameters:
+        - id: deviceId
+          type:
+            - string
+          description: ID of the device we're getting modules for
+        - id: done
+          type:
+            - '(err: Error, modules?: Module[], response?: any) => void'
+          description: |
+            The callback which will be called with either an Error object
+                                         or an array of module:azure-iothub.Module objects
+                                         for all the modules.
+    exceptions:
+      - type: ReferenceError
+        description: |
+          If the deviceId or done argument is falsy.
   - uid: azure-iothub.Registry.getRegistryStatistics
     name: getRegistryStatistics
     children: []
@@ -430,6 +684,36 @@ items:
             The function to call with two arguments: an error object if an error
             happened,
                                          (null otherwise) and the list of past jobs as an argument.
+  - uid: azure-iothub.Registry.removeConfiguration
+    name: removeConfiguration
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Remove a configuration with the given ID from an IoT Hub
+    syntax:
+      content: >-
+        function removeConfiguration(configurationId: string, done:
+        ResponseCallback)
+      parameters:
+        - id: configurationId
+          type:
+            - string
+          description: ID of the configuration to remove
+        - id: done
+          type:
+            - azure-iothub.Registry.ResponseCallback
+          description: |
+            The function to call when the operation is
+                                                 complete. `done` will be called with three
+                                                 arguments: an Error object (can be null), the
+                                                 body of the response, and a transport-specific
+                                                 response object useful for logging or
+                                                 debugging.
+    exceptions:
+      - type: ReferenceError
+        description: |
+          The configurationId or done argument is falsy
   - uid: azure-iothub.Registry.removeDevices
     name: removeDevices
     children: []
@@ -466,6 +750,62 @@ items:
                                            BulkRegistryOperationResult
                                            and a transport-specific response object useful
                                            for logging or debugging.
+  - uid: azure-iothub.Registry.removeModule
+    name: removeModule
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Remove the given module from the registry
+    syntax:
+      content: 'function removeModule(module: Module, done: ResponseCallback)'
+      parameters:
+        - id: module
+          type:
+            - azure-iothub.Module
+          description: ''
+        - id: done
+          type:
+            - azure-iothub.Registry.ResponseCallback
+          description: |
+            The function to call when the operation is
+                                           complete. `done` will be called with three
+                                           arguments: an Error object (can be null), the
+                                           body of the response, and a transport-specific
+                                           response object useful for logging or
+                                           debugging.
+    exceptions:
+      - type: ReferenceError
+        description: |
+          If the done deviceId, moduleId, or argument is falsy.
+  - uid: azure-iothub.Registry.removeModule_1
+    name: removeModule
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Remove the given module from the registry
+    syntax:
+      content: >-
+        function removeModule(deviceId: string, moduleId: string, done:
+        ResponseCallback)
+      parameters:
+        - id: deviceId
+          type:
+            - string
+          description: ''
+        - id: moduleId
+          type:
+            - string
+          description: ''
+        - id: done
+          type:
+            - azure-iothub.Registry.ResponseCallback
+          description: ''
+    exceptions:
+      - type: ReferenceError
+        description: |
+          If the done deviceId, moduleId, or argument is falsy.
   - uid: azure-iothub.Registry.update
     name: update
     children: []
@@ -496,6 +836,74 @@ items:
                                            object representing the updated device
                                            identity, and a transport-specific response
                                            object useful for logging or debugging.
+  - uid: azure-iothub.Registry.updateConfiguration
+    name: updateConfiguration
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Update a configuration in an IoT hub
+    syntax:
+      content: >-
+        function updateConfiguration(configuration: Configuration, done:
+        ResponseCallback)
+      parameters:
+        - id: configuration
+          type:
+            - azure-iothub.Configuration
+          description: |-
+            An object of type module:azure-iothub.Configuration
+                                                 to add to the hub
+        - id: done
+          type:
+            - azure-iothub.Registry.ResponseCallback
+          description: |
+            The function to call when the operation is
+                                                 complete. `done` will be called with three
+                                                 arguments: an Error object (can be null), the
+                                                 body of the response, and a transport-specific
+                                                 response object useful for logging or
+                                                 debugging.
+    exceptions:
+      - type: ReferenceError
+        description: The configuration or done argument is falsy
+      - type: ArgumentError
+        description: |
+          The eTag is missing from the Configuration object,
+                                               but forceUpdate is not set to true, or the configuration
+                                               object is missing an id property.
+  - uid: azure-iothub.Registry.updateConfiguration_1
+    name: updateConfiguration
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Update a configuration in an IoT hub
+    syntax:
+      content: >-
+        function updateConfiguration(configuration: Configuration, forceUpdate:
+        boolean, done: ResponseCallback)
+      parameters:
+        - id: configuration
+          type:
+            - azure-iothub.Configuration
+          description: ''
+        - id: forceUpdate
+          type:
+            - boolean
+          description: ''
+        - id: done
+          type:
+            - azure-iothub.Registry.ResponseCallback
+          description: ''
+    exceptions:
+      - type: ReferenceError
+        description: The configuration or done argument is falsy
+      - type: ArgumentError
+        description: |
+          The eTag is missing from the Configuration object,
+                                               but forceUpdate is not set to true, or the configuration
+                                               object is missing an id property.
   - uid: azure-iothub.Registry.updateDevices
     name: updateDevices
     children: []
@@ -533,6 +941,111 @@ items:
                                            and a transport-specific response object useful
                                            for logging or debugging.
           optional: true
+  - uid: azure-iothub.Registry.updateModule
+    name: updateModule
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Update the given module object in the registry
+    syntax:
+      content: 'function updateModule(module: Module, done: ResponseCallback)'
+      parameters:
+        - id: module
+          type:
+            - azure-iothub.Module
+          description: Module object to update.
+        - id: done
+          type:
+            - azure-iothub.Registry.ResponseCallback
+          description: |
+            The function to call when the operation is
+                                           complete. `done` will be called with three
+                                           arguments: an Error object (can be null), the
+                                           body of the response, and a transport-specific
+                                           response object useful for logging or
+                                           debugging.
+    exceptions:
+      - type: ReferenceError
+        description: If the module or done argument is falsy.
+      - type: ArgumentError
+        description: |
+          If the module object is missing an etag and
+                                         forceUpdate is not set to true, or the module
+                                         object is missing it's deviceId or moduleId property.
+  - uid: azure-iothub.Registry.updateModule_1
+    name: updateModule
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Update the given module object in the registry
+    syntax:
+      content: >-
+        function updateModule(module: Module, forceUpdate: boolean, done:
+        ResponseCallback)
+      parameters:
+        - id: module
+          type:
+            - azure-iothub.Module
+          description: ''
+        - id: forceUpdate
+          type:
+            - boolean
+          description: ''
+        - id: done
+          type:
+            - azure-iothub.Registry.ResponseCallback
+          description: ''
+    exceptions:
+      - type: ReferenceError
+        description: If the module or done argument is falsy.
+      - type: ArgumentError
+        description: |
+          If the module object is missing an etag and
+                                         forceUpdate is not set to true, or the module
+                                         object is missing it's deviceId or moduleId property.
+  - uid: azure-iothub.Registry.updateModuleTwin
+    name: updateModuleTwin
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates the Twin of a specific module with the given patch.
+    syntax:
+      content: >-
+        function updateModuleTwin(deviceId: string, moduleId: string, patch:
+        any, etag: string, done: ResponseCallback)
+      parameters:
+        - id: deviceId
+          type:
+            - string
+          description: The device identifier.
+        - id: moduleId
+          type:
+            - string
+          description: The module identifier
+        - id: patch
+          type:
+            - any
+          description: The desired properties and tags to patch the module twin with.
+        - id: etag
+          type:
+            - string
+          description: >-
+            The latest etag for this module twin or '*' to force an update even
+            if
+                                             the module twin has been updated since the etag was obtained.
+        - id: done
+          type:
+            - azure-iothub.Registry.ResponseCallback
+          description: |-
+            The callback that will be called with either an Error object or
+                                             the module twin instance.
+    exceptions:
+      - type: ReferenceError
+        description: |
+          If the deviceId, moduleId, patch, etag, or done argument is falsy.
   - uid: azure-iothub.Registry.updateTwin
     name: updateTwin
     children: []

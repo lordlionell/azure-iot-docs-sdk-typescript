@@ -4,12 +4,27 @@ items:
     name: DeviceDescription
     fullName: DeviceDescription
     children:
+      - azure-iothub.Registry.DeviceDescription.capabilities
       - azure-iothub.Registry.DeviceDescription.deviceId
     langs:
       - typeScript
     type: interface
     summary: ''
     package: azure-iothub
+  - uid: azure-iothub.Registry.DeviceDescription.capabilities
+    name: capabilities
+    fullName: capabilities
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'capabilities?: Capabilities'
+      return:
+        type:
+          - azure-iothub.Device.Capabilities
   - uid: azure-iothub.Registry.DeviceDescription.deviceId
     name: deviceId
     fullName: deviceId

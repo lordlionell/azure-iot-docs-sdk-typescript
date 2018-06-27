@@ -1,0 +1,26 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-iothub.Device.Capabilities
+    name: Capabilities
+    fullName: Capabilities
+    children:
+      - azure-iothub.Device.Capabilities.iotEdge
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-iothub
+  - uid: azure-iothub.Device.Capabilities.iotEdge
+    name: iotEdge
+    fullName: iotEdge
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'iotEdge?: boolean'
+      return:
+        type:
+          - boolean

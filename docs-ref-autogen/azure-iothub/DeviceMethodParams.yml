@@ -83,6 +83,11 @@ references:
       - name: Authentication
         fullName: Authentication
         uid: azure-iothub.Device.Authentication
+  - uid: azure-iothub.Device.Capabilities
+    spec.typeScript:
+      - name: Capabilities
+        fullName: Capabilities
+        uid: azure-iothub.Device.Capabilities
   - uid: azure-iothub.Device.ConnectionState
     spec.typeScript:
       - name: ConnectionState

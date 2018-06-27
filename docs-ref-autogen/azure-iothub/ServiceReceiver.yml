@@ -125,6 +125,21 @@ references:
         uid: azure-iothub.Registry.DeviceRegistryOperationError
       - name: '[]'
         fullName: '[]'
+  - uid: azure-iothub.Device.Capabilities
+    spec.typeScript:
+      - name: Capabilities
+        fullName: Capabilities
+        uid: azure-iothub.Device.Capabilities
+  - uid: azure-iothub.Configuration
+    spec.typeScript:
+      - name: Configuration
+        fullName: Configuration
+        uid: azure-iothub.Configuration
+  - uid: azure-iothub.Registry.ResponseCallback
+    spec.typeScript:
+      - name: ResponseCallback
+        fullName: ResponseCallback
+        uid: azure-iothub.Registry.ResponseCallback
   - uid: 'azure-iothub.Registry.DeviceDescription[]'
     spec.typeScript:
       - name: DeviceDescription
@@ -137,6 +152,16 @@ references:
       - name: BulkDeviceIdentityCallback
         fullName: BulkDeviceIdentityCallback
         uid: azure-iothub.Registry.BulkDeviceIdentityCallback
+  - uid: azure-iothub.Module
+    spec.typeScript:
+      - name: Module
+        fullName: Module
+        uid: azure-iothub.Module
+  - uid: azure-iothub.ConfigurationContent
+    spec.typeScript:
+      - name: ConfigurationContent
+        fullName: ConfigurationContent
+        uid: azure-iothub.ConfigurationContent
   - uid: azure-iothub.Registry.JobCallback
     spec.typeScript:
       - name: JobCallback
@@ -157,11 +182,6 @@ references:
       - name: Query
         fullName: Query
         uid: azure-iothub.Query
-  - uid: azure-iothub.Registry.ResponseCallback
-    spec.typeScript:
-      - name: ResponseCallback
-        fullName: ResponseCallback
-        uid: azure-iothub.Registry.ResponseCallback
   - uid: Callback<azure-iothub.Registry.RegistryStatistics>
     spec.typeScript:
       - name: Callback<

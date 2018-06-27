@@ -7,6 +7,7 @@ items:
       - azure-iothub.Twin.constructor
       - azure-iothub.Twin.deviceId
       - azure-iothub.Twin.etag
+      - azure-iothub.Twin.moduleId
       - azure-iothub.Twin.properties
       - azure-iothub.Twin.tags
       - azure-iothub.Twin.get
@@ -89,6 +90,22 @@ items:
       the device twin.
     syntax:
       content: 'etag: string'
+      return:
+        type:
+          - string
+  - uid: azure-iothub.Twin.moduleId
+    name: moduleId
+    fullName: moduleId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Module identifier for the module associated with the twin, as it exists in
+      the device identity registry.
+    optional: true
+    syntax:
+      content: 'moduleId?: string'
       return:
         type:
           - string

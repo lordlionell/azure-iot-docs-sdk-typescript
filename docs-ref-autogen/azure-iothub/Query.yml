@@ -93,3 +93,14 @@ items:
             The callback that will be called with either an Error object or
                                                       the results of the query.
           optional: true
+references:
+  - uid: azure-iothub.Device.Authentication
+    spec.typeScript:
+      - name: Authentication
+        fullName: Authentication
+        uid: azure-iothub.Device.Authentication
+  - uid: azure-iothub.Device.ConnectionState
+    spec.typeScript:
+      - name: ConnectionState
+        fullName: ConnectionState
+        uid: azure-iothub.Device.ConnectionState

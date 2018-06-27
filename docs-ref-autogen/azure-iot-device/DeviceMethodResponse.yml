@@ -31,7 +31,7 @@ items:
       - typeScript
     summary: ''
     syntax:
-      content: 'new DeviceMethodResponse(requestId: string, transport: Transport)'
+      content: 'new DeviceMethodResponse(requestId: string, transport: DeviceTransport)'
       parameters:
         - id: requestId
           type:
@@ -39,7 +39,7 @@ items:
           description: ''
         - id: transport
           type:
-            - azure-iot-device.Client.Transport
+            - azure-iot-device.DeviceTransport
           description: ''
   - uid: azure-iot-device.DeviceMethodResponse.isResponseComplete
     name: isResponseComplete

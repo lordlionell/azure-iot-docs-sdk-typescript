@@ -56,7 +56,7 @@ items:
       - typeScript
     type: property
     summary: >-
-      The desired and reported properties dictionnaries (respectively in
+      The desired and reported properties dictionaries (respectively in
       `properties.desired` and `properties.reported`).
     syntax:
       content: 'properties: TwinProperties'
@@ -105,3 +105,24 @@ items:
           description: >
             function that shall be called back with either the twin or an error
             if the transport fails to retrieve the twin.
+references:
+  - uid: azure-iot-device.MethodParams
+    spec.typeScript:
+      - name: MethodParams
+        fullName: MethodParams
+        uid: azure-iot-device.MethodParams
+  - uid: azure-iot-device.MethodCallback
+    spec.typeScript:
+      - name: MethodCallback
+        fullName: MethodCallback
+        uid: azure-iot-device.MethodCallback
+  - uid: azure-iot-device.DeviceClientOptions
+    spec.typeScript:
+      - name: DeviceClientOptions
+        fullName: DeviceClientOptions
+        uid: azure-iot-device.DeviceClientOptions
+  - uid: azure-iot-device.ModuleClient
+    spec.typeScript:
+      - name: ModuleClient
+        fullName: ModuleClient
+        uid: azure-iot-device.ModuleClient

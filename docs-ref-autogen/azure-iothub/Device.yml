@@ -8,6 +8,7 @@ items:
       - azure-iothub.Device.DeviceStatus
       - azure-iothub.Device.constructor
       - azure-iothub.Device.authentication
+      - azure-iothub.Device.capabilities
       - azure-iothub.Device.cloudToDeviceMessageCount
       - azure-iothub.Device.connectionState
       - azure-iothub.Device.connectionStateUpdatedTime
@@ -79,7 +80,7 @@ items:
           description: >
             An optional JSON representation of the device, which will be mapped
             to properties in the object. If no argument is provided, Device
-            roperties will be assigned default values.
+            properties will be assigned default values.
           optional: true
   - uid: azure-iothub.Device.authentication
     name: authentication
@@ -95,6 +96,20 @@ items:
       return:
         type:
           - azure-iothub.Device.Authentication
+  - uid: azure-iothub.Device.capabilities
+    name: capabilities
+    fullName: capabilities
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Contains the capabilities of this device.
+    optional: true
+    syntax:
+      content: 'capabilities?: Capabilities'
+      return:
+        type:
+          - azure-iothub.Device.Capabilities
   - uid: azure-iothub.Device.cloudToDeviceMessageCount
     name: cloudToDeviceMessageCount
     fullName: cloudToDeviceMessageCount

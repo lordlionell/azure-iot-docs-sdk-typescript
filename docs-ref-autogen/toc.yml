@@ -184,17 +184,20 @@
     - uid: azure-iot-device.Client
       name: Client
       items: []
-    - uid: azure-iot-device.Client.BlobUpload
-      name: BlobUpload
-      items: []
-    - uid: azure-iot-device.Client.Transport
-      name: Transport
-      items: []
     - uid: azure-iot-device.DeviceMethodRequest
       name: DeviceMethodRequest
       items: []
     - uid: azure-iot-device.DeviceMethodResponse
       name: DeviceMethodResponse
+      items: []
+    - uid: azure-iot-device.MethodParams
+      name: MethodParams
+      items: []
+    - uid: azure-iot-device.MethodResult
+      name: MethodResult
+      items: []
+    - uid: azure-iot-device.MethodCallback
+      name: MethodCallback
       items: []
     - uid: azure-iot-device.AmqpTransportOptions
       name: AmqpTransportOptions
@@ -210,6 +213,21 @@
       items: []
     - uid: azure-iot-device.MqttTransportOptions
       name: MqttTransportOptions
+      items: []
+    - uid: azure-iot-device.BlobUpload
+      name: BlobUpload
+      items: []
+    - uid: azure-iot-device.DeviceTransport
+      name: DeviceTransport
+      items: []
+    - uid: azure-iot-device.TransportCtor
+      name: TransportCtor
+      items: []
+    - uid: azure-iot-device.IotEdgeAuthenticationProvider
+      name: IotEdgeAuthenticationProvider
+      items: []
+    - uid: azure-iot-device.ModuleClient
+      name: ModuleClient
       items: []
     - uid: azure-iot-device.SharedAccessKeyAuthenticationProvider
       name: SharedAccessKeyAuthenticationProvider
@@ -388,11 +406,23 @@
     - uid: azure-iothub.Client.TransportConfigOptions
       name: TransportConfigOptions
       items: []
+    - uid: azure-iothub.Configuration
+      name: Configuration
+      items: []
+    - uid: azure-iothub.ConfigurationContent
+      name: ConfigurationContent
+      items: []
+    - uid: azure-iothub.ConfigurationMetrics
+      name: ConfigurationMetrics
+      items: []
     - uid: azure-iothub.Device
       name: Device
       items: []
     - uid: azure-iothub.Device.Authentication
       name: Authentication
+      items: []
+    - uid: azure-iothub.Device.Capabilities
+      name: Capabilities
       items: []
     - uid: azure-iothub.Device.X509Thumbprints
       name: X509Thumbprints
@@ -408,6 +438,9 @@
       items: []
     - uid: azure-iothub.JobType
       name: JobType
+      items: []
+    - uid: azure-iothub.Module
+      name: Module
       items: []
     - uid: azure-iothub.Query
       name: Query

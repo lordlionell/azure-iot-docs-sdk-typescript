@@ -10,6 +10,7 @@ items:
       - azure-iothub.Client.getFeedbackReceiver
       - azure-iothub.Client.getFileNotificationReceiver
       - azure-iothub.Client.invokeDeviceMethod
+      - azure-iothub.Client.invokeDeviceMethod_1
       - azure-iothub.Client.open
       - azure-iothub.Client.send
       - azure-iothub.Client.setRetryPolicy
@@ -123,7 +124,7 @@ items:
     type: method
     langs:
       - typeScript
-    summary: Invokes a method on a particular device.
+    summary: Invokes a method on a particular device or module.
     syntax:
       content: >-
         function invokeDeviceMethod(deviceId: string, methodParams:
@@ -142,6 +143,41 @@ items:
             - azure-iothub.Client.Callback<any>
           description: |
             The callback to call with the result of the method execution.
+          optional: true
+    exceptions:
+      - type: ReferenceError
+        description: 'If one of the required parameters is null, undefined or empty.'
+      - type: TypeError
+        description: |
+          If one of the parameters is of the wrong type.
+  - uid: azure-iothub.Client.invokeDeviceMethod_1
+    name: invokeDeviceMethod
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Invokes a method on a particular device or module.
+    syntax:
+      content: >-
+        function invokeDeviceMethod(deviceId: string, moduleId: string,
+        methodParams: DeviceMethodParams, done?: Callback<any>)
+      parameters:
+        - id: deviceId
+          type:
+            - string
+          description: ''
+        - id: moduleId
+          type:
+            - string
+          description: ''
+        - id: methodParams
+          type:
+            - azure-iothub.DeviceMethodParams
+          description: ''
+        - id: done
+          type:
+            - azure-iothub.Client.Callback<any>
+          description: ''
           optional: true
     exceptions:
       - type: ReferenceError

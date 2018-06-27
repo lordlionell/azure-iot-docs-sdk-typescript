@@ -7,6 +7,7 @@ items:
       - azure-iot-common.TransportConfig.deviceId
       - azure-iot-common.TransportConfig.gatewayHostName
       - azure-iot-common.TransportConfig.host
+      - azure-iot-common.TransportConfig.moduleId
       - azure-iot-common.TransportConfig.sharedAccessKey
       - azure-iot-common.TransportConfig.sharedAccessKeyName
       - azure-iot-common.TransportConfig.sharedAccessSignature
@@ -57,6 +58,20 @@ items:
     summary: Hostname of the Azure IoT hub instance.
     syntax:
       content: 'host: string'
+      return:
+        type:
+          - string
+  - uid: azure-iot-common.TransportConfig.moduleId
+    name: moduleId
+    fullName: moduleId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Module unique identifier.
+    optional: true
+    syntax:
+      content: 'moduleId?: string'
       return:
         type:
           - string

@@ -1,0 +1,18 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-iot-device.MethodCallback
+    name: MethodCallback
+    fullName: MethodCallback
+    children: []
+    langs:
+      - typeScript
+    type: class
+    summary: |+
+
+    package: azure-iot-device
+references:
+  - uid: azure-iot-device.DeviceTransport
+    spec.typeScript:
+      - name: DeviceTransport
+        fullName: DeviceTransport
+        uid: azure-iot-device.DeviceTransport
