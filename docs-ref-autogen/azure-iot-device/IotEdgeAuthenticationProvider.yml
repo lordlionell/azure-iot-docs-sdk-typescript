@@ -33,3 +33,9 @@ items:
           type:
             - '(err?: Error, ca?: string) => void'
           description: ''
+references:
+  - uid: azure-iot-device.SharedAccessKeyAuthenticationProvider
+    spec.typeScript:
+      - name: SharedAccessKeyAuthenticationProvider
+        fullName: SharedAccessKeyAuthenticationProvider
+        uid: azure-iot-device.SharedAccessKeyAuthenticationProvider

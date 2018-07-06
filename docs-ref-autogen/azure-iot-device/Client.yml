@@ -137,10 +137,6 @@ items:
             - '(err?: Error) => void'
           description: |
             The callback to call when the upload is complete.
-    exceptions:
-      - type: ReferenceException
-        description: |
-          If blobName or stream or streamLength is falsy.
   - uid: azure-iot-device.Client.fromAuthenticationProvider
     name: fromAuthenticationProvider
     children: []
@@ -195,10 +191,6 @@ items:
       return:
         type:
           - any
-    exceptions:
-      - type: ReferenceError
-        description: |
-          If the connStr parameter is falsy.
   - uid: azure-iot-device.Client.fromSharedAccessSignature
     name: fromSharedAccessSignature
     children: []
@@ -226,7 +218,9 @@ items:
       return:
         type:
           - any
-    exceptions:
-      - type: ReferenceError
-        description: |
-          If the connStr parameter is falsy.
+references:
+  - uid: azure-iot-device.DeviceTransport
+    spec.typeScript:
+      - name: DeviceTransport
+        fullName: DeviceTransport
+        uid: azure-iot-device.DeviceTransport

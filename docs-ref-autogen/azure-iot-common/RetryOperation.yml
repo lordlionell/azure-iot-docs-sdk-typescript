@@ -62,3 +62,9 @@ items:
           description: >
             The callback to call with the final error or result, after retries
             if necessary.
+references:
+  - uid: azure-iot-common.RetryPolicy
+    spec.typeScript:
+      - name: RetryPolicy
+        fullName: RetryPolicy
+        uid: azure-iot-common.RetryPolicy

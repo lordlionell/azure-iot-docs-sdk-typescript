@@ -134,3 +134,9 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: azure-iot-common.ExponentialBackoffWithJitterParameters
+    spec.typeScript:
+      - name: ExponentialBackoffWithJitterParameters
+        fullName: ExponentialBackoffWithJitterParameters
+        uid: azure-iot-common.ExponentialBackoffWithJitterParameters

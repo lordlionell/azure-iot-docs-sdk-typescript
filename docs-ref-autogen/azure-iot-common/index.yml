@@ -8,7 +8,27 @@ items:
       - azure-iot-common.AuthenticationProvider
       - azure-iot-common.TransportConfig
       - azure-iot-common.X509
+      - azure-iot-common.anHourFromNow
+      - azure-iot-common.encodeUriComponentStrict
+      - azure-iot-common.hmacHash
+      - azure-iot-common.stringToSign
       - azure-iot-common.ConnectionString
+      - azure-iot-common.createDictionary
+      - azure-iot-common.deviceBlobUploadNotificationPath
+      - azure-iot-common.deviceBlobUploadPath
+      - azure-iot-common.deviceEventPath
+      - azure-iot-common.deviceFeedbackPath
+      - azure-iot-common.deviceMessagePath
+      - azure-iot-common.deviceMethodPath
+      - azure-iot-common.devicePath
+      - azure-iot-common.deviceTwinPath
+      - azure-iot-common.moduleEventPath
+      - azure-iot-common.moduleInputMessagePath
+      - azure-iot-common.moduleMessagePath
+      - azure-iot-common.moduleMethodPath
+      - azure-iot-common.modulePath
+      - azure-iot-common.moduleTwinPath
+      - azure-iot-common.versionQueryString
       - azure-iot-common.ArgumentError
       - azure-iot-common.ArgumentOutOfRangeError
       - azure-iot-common.BadDeviceResponseError
@@ -58,387 +78,9 @@ items:
       - azure-iot-common.NoRetry
       - azure-iot-common.RetryPolicy
       - azure-iot-common.SharedAccessSignature
-      - azure-iot-common.anHourFromNow
-      - azure-iot-common.encodeUriComponentStrict
-      - azure-iot-common.hmacHash
-      - azure-iot-common.stringToSign
-      - azure-iot-common.deviceBlobUploadNotificationPath
-      - azure-iot-common.deviceBlobUploadPath
-      - azure-iot-common.deviceEventPath
-      - azure-iot-common.deviceFeedbackPath
-      - azure-iot-common.deviceMessagePath
-      - azure-iot-common.deviceMethodPath
-      - azure-iot-common.devicePath
-      - azure-iot-common.deviceTwinPath
-      - azure-iot-common.moduleEventPath
-      - azure-iot-common.moduleInputMessagePath
-      - azure-iot-common.moduleMessagePath
-      - azure-iot-common.moduleMethodPath
-      - azure-iot-common.modulePath
-      - azure-iot-common.moduleTwinPath
-      - azure-iot-common.versionQueryString
     type: package
     langs:
       - typeScript
-  - uid: azure-iot-common.anHourFromNow
-    name: anHourFromNow
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: |-
-      Returns the seconds elapsed since 1 January 1970 00:00:00 UTC until one
-      hour from now.
-    syntax:
-      content: function anHourFromNow()
-      parameters: []
-      return:
-        type:
-          - number
-  - uid: azure-iot-common.encodeUriComponentStrict
-    name: encodeUriComponentStrict
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      content: 'function encodeUriComponentStrict(str: string)'
-      parameters:
-        - id: str
-          type:
-            - string
-          description: ''
-      return:
-        type:
-          - string
-  - uid: azure-iot-common.hmacHash
-    name: hmacHash
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      content: 'function hmacHash(password: string, stringToSign: string)'
-      parameters:
-        - id: password
-          type:
-            - string
-          description: ''
-        - id: stringToSign
-          type:
-            - string
-          description: ''
-      return:
-        type:
-          - string
-  - uid: azure-iot-common.stringToSign
-    name: stringToSign
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      content: 'function stringToSign(resourceUri: string, expiry: string)'
-      parameters:
-        - id: resourceUri
-          type:
-            - string
-          description: ''
-        - id: expiry
-          type:
-            - string
-          description: ''
-      return:
-        type:
-          - string
-  - uid: azure-iot-common.deviceBlobUploadNotificationPath
-    name: deviceBlobUploadNotificationPath
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      content: >-
-        function deviceBlobUploadNotificationPath(deviceId: string,
-        correlationId: string)
-      parameters:
-        - id: deviceId
-          type:
-            - string
-          description: ''
-        - id: correlationId
-          type:
-            - string
-          description: ''
-      return:
-        type:
-          - string
-  - uid: azure-iot-common.deviceBlobUploadPath
-    name: deviceBlobUploadPath
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      content: 'function deviceBlobUploadPath(deviceId: string)'
-      parameters:
-        - id: deviceId
-          type:
-            - string
-          description: ''
-      return:
-        type:
-          - string
-  - uid: azure-iot-common.deviceEventPath
-    name: deviceEventPath
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      content: 'function deviceEventPath(deviceId: string)'
-      parameters:
-        - id: deviceId
-          type:
-            - string
-          description: ''
-      return:
-        type:
-          - string
-  - uid: azure-iot-common.deviceFeedbackPath
-    name: deviceFeedbackPath
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      content: 'function deviceFeedbackPath(deviceId: string, lockToken: string)'
-      parameters:
-        - id: deviceId
-          type:
-            - string
-          description: ''
-        - id: lockToken
-          type:
-            - string
-          description: ''
-      return:
-        type:
-          - string
-  - uid: azure-iot-common.deviceMessagePath
-    name: deviceMessagePath
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      content: 'function deviceMessagePath(deviceId: string)'
-      parameters:
-        - id: deviceId
-          type:
-            - string
-          description: ''
-      return:
-        type:
-          - string
-  - uid: azure-iot-common.deviceMethodPath
-    name: deviceMethodPath
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      content: 'function deviceMethodPath(deviceId: string)'
-      parameters:
-        - id: deviceId
-          type:
-            - string
-          description: ''
-      return:
-        type:
-          - string
-  - uid: azure-iot-common.devicePath
-    name: devicePath
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      content: 'function devicePath(deviceId: string)'
-      parameters:
-        - id: deviceId
-          type:
-            - string
-          description: ''
-      return:
-        type:
-          - string
-  - uid: azure-iot-common.deviceTwinPath
-    name: deviceTwinPath
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      content: 'function deviceTwinPath(deviceId: string)'
-      parameters:
-        - id: deviceId
-          type:
-            - string
-          description: ''
-      return:
-        type:
-          - string
-  - uid: azure-iot-common.moduleEventPath
-    name: moduleEventPath
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      content: 'function moduleEventPath(deviceId: string, moduleId: string)'
-      parameters:
-        - id: deviceId
-          type:
-            - string
-          description: ''
-        - id: moduleId
-          type:
-            - string
-          description: ''
-      return:
-        type:
-          - string
-  - uid: azure-iot-common.moduleInputMessagePath
-    name: moduleInputMessagePath
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      content: 'function moduleInputMessagePath(deviceId: string, moduleId: string)'
-      parameters:
-        - id: deviceId
-          type:
-            - string
-          description: ''
-        - id: moduleId
-          type:
-            - string
-          description: ''
-      return:
-        type:
-          - string
-  - uid: azure-iot-common.moduleMessagePath
-    name: moduleMessagePath
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      content: 'function moduleMessagePath(deviceId: string, moduleId: string)'
-      parameters:
-        - id: deviceId
-          type:
-            - string
-          description: ''
-        - id: moduleId
-          type:
-            - string
-          description: ''
-      return:
-        type:
-          - string
-  - uid: azure-iot-common.moduleMethodPath
-    name: moduleMethodPath
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      content: 'function moduleMethodPath(deviceId: string, moduleId: string)'
-      parameters:
-        - id: deviceId
-          type:
-            - string
-          description: ''
-        - id: moduleId
-          type:
-            - string
-          description: ''
-      return:
-        type:
-          - string
-  - uid: azure-iot-common.modulePath
-    name: modulePath
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      content: 'function modulePath(deviceId: string, moduleId: string)'
-      parameters:
-        - id: deviceId
-          type:
-            - string
-          description: ''
-        - id: moduleId
-          type:
-            - string
-          description: ''
-      return:
-        type:
-          - string
-  - uid: azure-iot-common.moduleTwinPath
-    name: moduleTwinPath
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      content: 'function moduleTwinPath(deviceId: string, moduleId: string)'
-      parameters:
-        - id: deviceId
-          type:
-            - string
-          description: ''
-        - id: moduleId
-          type:
-            - string
-          description: ''
-      return:
-        type:
-          - string
-  - uid: azure-iot-common.versionQueryString
-    name: versionQueryString
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      content: function versionQueryString()
-      parameters: []
-      return:
-        type:
-          - string
 references:
   - uid: azure-iot-common.AuthenticationType
     name: AuthenticationType
@@ -448,8 +90,48 @@ references:
     name: TransportConfig
   - uid: azure-iot-common.X509
     name: X509
+  - uid: azure-iot-common.anHourFromNow
+    name: anHourFromNow
+  - uid: azure-iot-common.encodeUriComponentStrict
+    name: encodeUriComponentStrict
+  - uid: azure-iot-common.hmacHash
+    name: hmacHash
+  - uid: azure-iot-common.stringToSign
+    name: stringToSign
   - uid: azure-iot-common.ConnectionString
     name: ConnectionString
+  - uid: azure-iot-common.createDictionary
+    name: createDictionary
+  - uid: azure-iot-common.deviceBlobUploadNotificationPath
+    name: deviceBlobUploadNotificationPath
+  - uid: azure-iot-common.deviceBlobUploadPath
+    name: deviceBlobUploadPath
+  - uid: azure-iot-common.deviceEventPath
+    name: deviceEventPath
+  - uid: azure-iot-common.deviceFeedbackPath
+    name: deviceFeedbackPath
+  - uid: azure-iot-common.deviceMessagePath
+    name: deviceMessagePath
+  - uid: azure-iot-common.deviceMethodPath
+    name: deviceMethodPath
+  - uid: azure-iot-common.devicePath
+    name: devicePath
+  - uid: azure-iot-common.deviceTwinPath
+    name: deviceTwinPath
+  - uid: azure-iot-common.moduleEventPath
+    name: moduleEventPath
+  - uid: azure-iot-common.moduleInputMessagePath
+    name: moduleInputMessagePath
+  - uid: azure-iot-common.moduleMessagePath
+    name: moduleMessagePath
+  - uid: azure-iot-common.moduleMethodPath
+    name: moduleMethodPath
+  - uid: azure-iot-common.modulePath
+    name: modulePath
+  - uid: azure-iot-common.moduleTwinPath
+    name: moduleTwinPath
+  - uid: azure-iot-common.versionQueryString
+    name: versionQueryString
   - uid: azure-iot-common.ArgumentError
     name: ArgumentError
   - uid: azure-iot-common.ArgumentOutOfRangeError

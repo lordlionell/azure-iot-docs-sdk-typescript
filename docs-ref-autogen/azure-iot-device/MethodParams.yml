@@ -65,9 +65,3 @@ items:
       return:
         type:
           - number
-references:
-  - uid: azure-iot-device.DeviceTransport
-    spec.typeScript:
-      - name: DeviceTransport
-        fullName: DeviceTransport
-        uid: azure-iot-device.DeviceTransport

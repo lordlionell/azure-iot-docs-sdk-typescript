@@ -133,11 +133,9 @@ items:
                                            argument to the function in case an error
                                            occurs.
           optional: true
-    exceptions:
-      - type: ReferenceError
-        description: If the `status` parameter is not a number.
-      - type: Error
-        description: |
-          If this response has already been sent to the
-                                         service in a previous call to it. This method
-                                         should be called only once.
+references:
+  - uid: azure-iot-device.DeviceTransport
+    spec.typeScript:
+      - name: DeviceTransport
+        fullName: DeviceTransport
+        uid: azure-iot-device.DeviceTransport

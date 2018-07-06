@@ -113,8 +113,8 @@ items:
         type:
           - azure-iot-device.SharedAccessSignatureAuthenticationProvider
 references:
-  - uid: azure-iot-device.SharedAccessKeyAuthenticationProvider
+  - uid: azure-iot-device.SharedAccessSignatureAuthenticationProvider
     spec.typeScript:
-      - name: SharedAccessKeyAuthenticationProvider
-        fullName: SharedAccessKeyAuthenticationProvider
-        uid: azure-iot-device.SharedAccessKeyAuthenticationProvider
+      - name: SharedAccessSignatureAuthenticationProvider
+        fullName: SharedAccessSignatureAuthenticationProvider
+        uid: azure-iot-device.SharedAccessSignatureAuthenticationProvider

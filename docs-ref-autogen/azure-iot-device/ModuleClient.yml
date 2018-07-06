@@ -269,10 +269,6 @@ items:
       return:
         type:
           - azure-iot-device.ModuleClient
-    exceptions:
-      - type: ReferenceError
-        description: |
-          If the connStr parameter is falsy.
   - uid: azure-iot-device.ModuleClient.fromEnvironment
     name: fromEnvironment
     children: []
@@ -339,18 +335,24 @@ items:
       return:
         type:
           - any
-    exceptions:
-      - type: ReferenceError
-        description: |
-          If the connStr parameter is falsy.
 references:
-  - uid: azure-iot-device.DeviceMethodResponse
+  - uid: azure-iot-device.MethodParams
     spec.typeScript:
-      - name: DeviceMethodResponse
-        fullName: DeviceMethodResponse
-        uid: azure-iot-device.DeviceMethodResponse
+      - name: MethodParams
+        fullName: MethodParams
+        uid: azure-iot-device.MethodParams
+  - uid: azure-iot-device.MethodCallback
+    spec.typeScript:
+      - name: MethodCallback
+        fullName: MethodCallback
+        uid: azure-iot-device.MethodCallback
   - uid: azure-iot-device.DeviceClientOptions
     spec.typeScript:
       - name: DeviceClientOptions
         fullName: DeviceClientOptions
         uid: azure-iot-device.DeviceClientOptions
+  - uid: azure-iot-device.ModuleClient
+    spec.typeScript:
+      - name: ModuleClient
+        fullName: ModuleClient
+        uid: azure-iot-device.ModuleClient

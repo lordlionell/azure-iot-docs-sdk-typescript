@@ -156,3 +156,9 @@ items:
       return:
         type:
           - azure-iot-common.ConnectionString
+references:
+  - uid: azure-iot-common.ConnectionString
+    spec.typeScript:
+      - name: ConnectionString
+        fullName: ConnectionString
+        uid: azure-iot-common.ConnectionString

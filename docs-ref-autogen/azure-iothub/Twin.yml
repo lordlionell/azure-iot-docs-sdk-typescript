@@ -199,24 +199,17 @@ items:
                                            identity, and a transport-specific response
                                            object useful for logging or debugging.
 references:
-  - uid: azure-iothub.Client.Callback<MessageAbandoned>
+  - uid: azure-iothub.Registry
     spec.typeScript:
-      - name: Callback
-        fullName: Callback
-        uid: azure-iothub.Client.Callback
-      - name: <MessageAbandoned>
-        fullName: <MessageAbandoned>
-  - uid: azure-iothub.Client.Callback<MessageCompleted>
+      - name: Registry
+        fullName: Registry
+        uid: azure-iothub.Registry
+  - uid: Callback<azure-iothub.Twin>
     spec.typeScript:
-      - name: Callback
-        fullName: Callback
-        uid: azure-iothub.Client.Callback
-      - name: <MessageCompleted>
-        fullName: <MessageCompleted>
-  - uid: azure-iothub.Client.Callback<MessageRejected>
-    spec.typeScript:
-      - name: Callback
-        fullName: Callback
-        uid: azure-iothub.Client.Callback
-      - name: <MessageRejected>
-        fullName: <MessageRejected>
+      - name: Callback<
+        fullName: Callback<
+      - name: Twin
+        fullName: Twin
+        uid: azure-iothub.Twin
+      - name: '>'
+        fullName: '>'
