@@ -1,23 +1,20 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: azure-iot-common.modulePath
-    name: modulePath
+  - uid: azure-iot-common.deviceEventPath
+    name: deviceEventPath
     children: []
     type: function
     langs:
       - typeScript
     summary: ''
     syntax:
-      content: 'function modulePath(deviceId: string, moduleId: string)'
+      content: 'function deviceEventPath(deviceId: string)'
       parameters:
         - id: deviceId
-          type:
-            - string
-          description: ''
-        - id: moduleId
           type:
             - string
           description: ''
       return:
         type:
           - string
+    package: azure-iot-common

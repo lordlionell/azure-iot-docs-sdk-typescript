@@ -82,6 +82,7 @@ items:
             to properties in the object. If no argument is provided, Device
             properties will be assigned default values.
           optional: true
+    package: azure-iothub
   - uid: azure-iothub.Device.authentication
     name: authentication
     fullName: authentication
@@ -96,6 +97,7 @@ items:
       return:
         type:
           - azure-iothub.Device.Authentication
+    package: azure-iothub
   - uid: azure-iothub.Device.capabilities
     name: capabilities
     fullName: capabilities
@@ -110,6 +112,7 @@ items:
       return:
         type:
           - azure-iothub.Device.Capabilities
+    package: azure-iothub
   - uid: azure-iothub.Device.cloudToDeviceMessageCount
     name: cloudToDeviceMessageCount
     fullName: cloudToDeviceMessageCount
@@ -124,6 +127,7 @@ items:
       return:
         type:
           - string
+    package: azure-iothub
   - uid: azure-iothub.Device.connectionState
     name: connectionState
     fullName: connectionState
@@ -149,6 +153,7 @@ items:
       return:
         type:
           - azure-iothub.Device.ConnectionState
+    package: azure-iothub
   - uid: azure-iothub.Device.connectionStateUpdatedTime
     name: connectionStateUpdatedTime
     fullName: connectionStateUpdatedTime
@@ -163,6 +168,7 @@ items:
       return:
         type:
           - string
+    package: azure-iothub
   - uid: azure-iothub.Device.deviceId
     name: deviceId
     fullName: deviceId
@@ -178,6 +184,7 @@ items:
       return:
         type:
           - string
+    package: azure-iothub
   - uid: azure-iothub.Device.etag
     name: etag
     fullName: etag
@@ -192,6 +199,7 @@ items:
       return:
         type:
           - string
+    package: azure-iothub
   - uid: azure-iothub.Device.generationId
     name: generationId
     fullName: generationId
@@ -208,6 +216,7 @@ items:
       return:
         type:
           - string
+    package: azure-iothub
   - uid: azure-iothub.Device.lastActivityTime
     name: lastActivityTime
     fullName: lastActivityTime
@@ -224,6 +233,7 @@ items:
       return:
         type:
           - string
+    package: azure-iothub
   - uid: azure-iothub.Device.status
     name: status
     fullName: status
@@ -240,6 +250,7 @@ items:
       return:
         type:
           - azure-iothub.Device.DeviceStatus
+    package: azure-iothub
   - uid: azure-iothub.Device.statusReason
     name: statusReason
     fullName: statusReason
@@ -254,6 +265,7 @@ items:
       return:
         type:
           - string
+    package: azure-iothub
   - uid: azure-iothub.Device.statusUpdatedTime
     name: statusUpdatedTime
     fullName: statusUpdatedTime
@@ -268,6 +280,7 @@ items:
       return:
         type:
           - string
+    package: azure-iothub
 references:
   - uid: azure-iothub.Device.X509Thumbprints
     spec.typeScript:

@@ -41,6 +41,7 @@ items:
       return:
         type:
           - AuthenticationType
+    package: azure-iot-device
   - uid: >-
       azure-iot-device.SharedAccessKeyAuthenticationProvider.getDeviceCredentials
     name: getDeviceCredentials
@@ -62,6 +63,7 @@ items:
           description: >
             function that will be called with either an error or a set of device
             credentials that can be used to authenticate with the IoT hub.
+    package: azure-iot-device
   - uid: >-
       azure-iot-device.SharedAccessKeyAuthenticationProvider.fromConnectionString
     name: fromConnectionString
@@ -99,6 +101,7 @@ items:
       return:
         type:
           - azure-iot-device.SharedAccessKeyAuthenticationProvider
+    package: azure-iot-device
 references:
   - uid: azure-iot-device.SharedAccessKeyAuthenticationProvider
     spec.typeScript:

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: azure-iothub.parse
+  - uid: azure-iot-device.parse
     name: parse
     children: []
     type: function
@@ -19,3 +19,4 @@ items:
       return:
         type:
           - SharedAccessSignature
+    package: azure-iot-device

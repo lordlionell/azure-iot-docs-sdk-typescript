@@ -33,6 +33,7 @@ items:
             - string
           description: ''
           optional: true
+    package: azure-iot-common
   - uid: azure-iot-common.IotHubQuotaExceededError.Error
     name: Error
     fullName: Error
@@ -46,3 +47,4 @@ items:
       return:
         type:
           - ErrorConstructor
+    package: azure-iot-common

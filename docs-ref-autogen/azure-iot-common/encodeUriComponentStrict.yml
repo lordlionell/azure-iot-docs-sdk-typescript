@@ -1,19 +1,20 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: azure-iot-common.deviceBlobUploadPath
-    name: deviceBlobUploadPath
+  - uid: azure-iot-common.encodeUriComponentStrict
+    name: encodeUriComponentStrict
     children: []
     type: function
     langs:
       - typeScript
     summary: ''
     syntax:
-      content: 'function deviceBlobUploadPath(deviceId: string)'
+      content: 'function encodeUriComponentStrict(str: string)'
       parameters:
-        - id: deviceId
+        - id: str
           type:
             - string
           description: ''
       return:
         type:
           - string
+    package: azure-iot-common

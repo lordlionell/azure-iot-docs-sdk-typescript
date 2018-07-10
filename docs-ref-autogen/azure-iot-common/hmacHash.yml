@@ -1,23 +1,24 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: azure-iot-common.moduleMessagePath
-    name: moduleMessagePath
+  - uid: azure-iot-common.hmacHash
+    name: hmacHash
     children: []
     type: function
     langs:
       - typeScript
     summary: ''
     syntax:
-      content: 'function moduleMessagePath(deviceId: string, moduleId: string)'
+      content: 'function hmacHash(password: string, stringToSign: string)'
       parameters:
-        - id: deviceId
+        - id: password
           type:
             - string
           description: ''
-        - id: moduleId
+        - id: stringToSign
           type:
             - string
           description: ''
       return:
         type:
           - string
+    package: azure-iot-common

@@ -1,23 +1,24 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: azure-iot-common.moduleTwinPath
-    name: moduleTwinPath
+  - uid: azure-iot-common.deviceFeedbackPath
+    name: deviceFeedbackPath
     children: []
     type: function
     langs:
       - typeScript
     summary: ''
     syntax:
-      content: 'function moduleTwinPath(deviceId: string, moduleId: string)'
+      content: 'function deviceFeedbackPath(deviceId: string, lockToken: string)'
       parameters:
         - id: deviceId
           type:
             - string
           description: ''
-        - id: moduleId
+        - id: lockToken
           type:
             - string
           description: ''
       return:
         type:
           - string
+    package: azure-iot-common

@@ -1,19 +1,20 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: azure-iot-common.encodeUriComponentStrict
-    name: encodeUriComponentStrict
+  - uid: azure-iot-common.deviceTwinPath
+    name: deviceTwinPath
     children: []
     type: function
     langs:
       - typeScript
     summary: ''
     syntax:
-      content: 'function encodeUriComponentStrict(str: string)'
+      content: 'function deviceTwinPath(deviceId: string)'
       parameters:
-        - id: str
+        - id: deviceId
           type:
             - string
           description: ''
       return:
         type:
           - string
+    package: azure-iot-common

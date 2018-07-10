@@ -1,23 +1,20 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: azure-iot-common.deviceFeedbackPath
-    name: deviceFeedbackPath
+  - uid: azure-iot-common.deviceBlobUploadPath
+    name: deviceBlobUploadPath
     children: []
     type: function
     langs:
       - typeScript
     summary: ''
     syntax:
-      content: 'function deviceFeedbackPath(deviceId: string, lockToken: string)'
+      content: 'function deviceBlobUploadPath(deviceId: string)'
       parameters:
         - id: deviceId
-          type:
-            - string
-          description: ''
-        - id: lockToken
           type:
             - string
           description: ''
       return:
         type:
           - string
+    package: azure-iot-common
