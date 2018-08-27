@@ -1,28 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: azure-iothub.Registry.QueryDescription
-    name: QueryDescription
-    fullName: QueryDescription
-    children:
-      - azure-iothub.Registry.QueryDescription.query
-    langs:
-      - typeScript
-    type: interface
-    summary: ''
-    package: azure-iothub
-  - uid: azure-iothub.Registry.QueryDescription.query
-    name: query
-    fullName: query
+  - uid: azure-iothub.Registry.BulkRegistryOperationType
+    name: BulkRegistryOperationType
+    fullName: BulkRegistryOperationType
     children: []
     langs:
       - typeScript
-    type: property
-    summary: ''
-    syntax:
-      content: 'query: string'
-      return:
-        type:
-          - string
+    type: class
+    summary: >-
+
+      "BulkRegistryOperationType" is a type alias. It refers to "create",
+      "Update", "UpdateIfMatchETag", "Delete" and "DeleteIfMatchETag".
     package: azure-iothub
 references:
   - uid: 'azure-iothub.Registry.DeviceRegistryOperationError[]'

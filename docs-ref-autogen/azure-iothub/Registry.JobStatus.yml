@@ -1,28 +1,13 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: azure-iothub.Registry.QueryDescription
-    name: QueryDescription
-    fullName: QueryDescription
-    children:
-      - azure-iothub.Registry.QueryDescription.query
+  - uid: azure-iothub.Registry.JobStatus
+    name: JobStatus
+    fullName: JobStatus
+    children: []
     langs:
       - typeScript
     type: interface
     summary: ''
-    package: azure-iothub
-  - uid: azure-iothub.Registry.QueryDescription.query
-    name: query
-    fullName: query
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      content: 'query: string'
-      return:
-        type:
-          - string
     package: azure-iothub
 references:
   - uid: 'azure-iothub.Registry.DeviceRegistryOperationError[]'
